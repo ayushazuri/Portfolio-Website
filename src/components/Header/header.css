@@ -1,0 +1,19 @@
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  margin-right: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px;
+}
+
+.header__menu li {
+  padding: 10px 20px;
+}
+/*# sourceMappingURL=header.css.map */
