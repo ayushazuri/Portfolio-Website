@@ -1,10 +1,13 @@
-import "./header.scss";
+import "./Header.scss";
 
 import { Link, NavLink } from "react-router-dom";
+import React, { useContext } from "react";
 
-import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import ThemeContext from "../../theme";
 
-const header = ({ theme }) => {
+const Header = () => {
+	const theme = useContext(ThemeContext);
 	const onMouseEnter = (e, color) => {
 		e.target.style.backgroundColor = color;
 	};
@@ -16,6 +19,7 @@ const header = ({ theme }) => {
 	return (
 		<header className="header">
 			<ul className="header__menu" style={{ backgroundColor: theme.body }}>
+				<GiHamburgerMenu />
 				<li>
 					<p
 						to="/home"
@@ -27,16 +31,6 @@ const header = ({ theme }) => {
 					>
 						Home
 					</p>
-					{/* <NavLink
-						to="/home"
-						tag={Link}
-						activeStyle={{ fontWeight: "bold" }}
-						style={{ color: theme.text }}
-						onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-						onMouseOut={(event) => onMouseOut(event)}
-					>
-						Home
-					</NavLink> */}
 				</li>
 				<li>
 					<p
@@ -91,4 +85,4 @@ const header = ({ theme }) => {
 	);
 };
 
-export default header;
+export default Header;

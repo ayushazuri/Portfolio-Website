@@ -1,0 +1,19 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introduction{
+    @include flex;
+    margin: 30px 35px 0 35px;
+    &__text{
+        flex: 0.5;
+    }
+    &__img{
+        flex: 0.5;
+    }
+    &__img > *{
+        max-width: 100%;
+        height: auto;
+    }
+}

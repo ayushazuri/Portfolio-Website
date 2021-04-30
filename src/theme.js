@@ -1,3 +1,5 @@
+import React from "react";
+
 export const blueTheme = {
 	body: "#EDF9FE",
 	text: "#001C55",
@@ -9,5 +11,9 @@ export const blueTheme = {
 	jacketColor: "#0A2472",
 	headerColor: "#0E6BA877",
 };
+const Theme = blueTheme;
 
-export const Theme = { blueTheme };
+const ThemeContext = React.createContext();
+
+export default ThemeContext;
+export { Theme };

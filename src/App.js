@@ -2,19 +2,24 @@ import "./App.css";
 
 import { HashRouter, Route, Switch } from "react-router-dom";
 
-import Header from "./components/Header/header";
+import { GlobalStyles } from "./globalcss";
+import Header from "./components/Header/Header";
 import Introduction from "./container/Introduction/Introduction";
-import { blueTheme } from "./theme";
+import { Theme } from "./theme";
+import ThemeContext from "./theme";
+import { ThemeProvider } from "styled-components";
 
 function App() {
 	return (
-		<div className="App">
-			{/* <Switch>
-				<Route></Route>
-			</Switch> */}
-			<Header theme={blueTheme} />
-			<Introduction />
-		</div>
+		<ThemeProvider theme={Theme} name="Ayush">
+			<ThemeContext.Provider value={Theme}>
+				<GlobalStyles />
+				<div className="App">
+					<Header />
+					<Introduction />
+				</div>
+			</ThemeContext.Provider>
+		</ThemeProvider>
 	);
 }
 
