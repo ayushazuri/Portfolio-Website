@@ -6,6 +6,9 @@ export const GlobalStyles = createGlobalStyle`
   *::before {
     box-sizing: border-box;
   }
+  li{
+    list-style-type: none;
+  }
   
   body {
     display: flex;

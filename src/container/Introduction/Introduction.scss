@@ -6,14 +6,26 @@
 .introduction{
     @include flex;
     margin: 30px 35px 0 35px;
+    flex-wrap: wrap;
     &__text{
-        flex: 0.5;
+        flex: 1 1;
+        margin-left: 30px;
+        flex-direction: column;
+        h1{
+            font-size: 55px;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 20px;
+            line-height: 40px;
+            margin-top: 0;
+        }
     }
     &__img{
-        flex: 0.5;
-    }
+        flex: 1 1;
+    }   
     &__img > *{
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
     }
 }

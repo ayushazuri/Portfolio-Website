@@ -1,13 +1,20 @@
 import "./Header.scss";
 
+import { GiHamburgerMenu, GiToggles } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
-import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
+import DesktopHeaderList from "./DesktopHeaderList";
+import MobileHeaderList from "./MobileHeaderList";
 import ThemeContext from "../../theme";
 
 const Header = () => {
 	const theme = useContext(ThemeContext);
+	const [open, setOpen] = useState(false); //For hamburger
+	const [size, setSize] = useState(window.innerWidth); //For responding to the size change (Media Query)
+	const isMobileTablet = 674; //Width for mobiles or tablet
+
 	const onMouseEnter = (e, color) => {
 		e.target.style.backgroundColor = color;
 	};
@@ -15,72 +22,76 @@ const Header = () => {
 	const onMouseOut = (e) => {
 		e.target.style.backgroundColor = "transparent";
 	};
-	console.log(theme);
+
+	const checkSize = () => {
+		setSize(window.innerWidth);
+	};
+	useEffect(() => {
+		window.addEventListener("resize", checkSize);
+
+		return () => {
+			window.removeEventListener("resize", checkSize);
+		};
+	}, []);
+
+	const handleOpen = () => {
+		if (open === true) {
+			setOpen(false);
+		} else {
+			setOpen(true);
+		}
+	};
+
 	return (
 		<header className="header">
-			<ul className="header__menu" style={{ backgroundColor: theme.body }}>
-				<GiHamburgerMenu />
-				<li>
-					<p
-						to="/home"
-						tag={Link}
-						activeStyle={{ fontWeight: "bold" }}
-						style={{ color: theme.text }}
-						onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-						onMouseOut={(event) => onMouseOut(event)}
-					>
-						Home
-					</p>
-				</li>
-				<li>
-					<p
-						to="/education"
-						tag={Link}
-						activeStyle={{ fontWeight: "bold" }}
-						style={{ color: theme.text }}
-						onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-						onMouseOut={(event) => onMouseOut(event)}
-					>
-						Education
-					</p>
-				</li>
-				<li>
-					<p
-						to="/experience"
-						tag={Link}
-						activeStyle={{ fontWeight: "bold" }}
-						style={{ color: theme.text }}
-						onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-						onMouseOut={(event) => onMouseOut(event)}
-					>
-						Experience
-					</p>
-				</li>
-				<li>
-					<p
-						to="/projects"
-						tag={Link}
-						activeStyle={{ fontWeight: "bold" }}
-						style={{ color: theme.text }}
-						onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-						onMouseOut={(event) => onMouseOut(event)}
-					>
-						Projects
-					</p>
-				</li>
-				<li>
-					<p
-						to="/projects"
-						tag={Link}
-						activeStyle={{ fontWeight: "bold" }}
-						style={{ color: theme.text }}
-						onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-						onMouseOut={(event) => onMouseOut(event)}
-					>
-						Contact me
-					</p>
-				</li>
-			</ul>
+			<h1 to={Link} tag={Link} className="header__logo">
+				<span style={{ color: theme.text }}> &lt;</span>
+				<span className="logo-name" style={{ color: theme.text }}>
+					Ayush Singh
+				</span>
+				<span style={{ color: theme.text }}> /&gt;</span>
+			</h1>
+			{size > isMobileTablet ? (
+				<ul className="header__menu" style={{ backgroundColor: theme.body }}>
+					<DesktopHeaderList
+						theme={theme}
+						onMouseEnter={onMouseEnter}
+						onMouseOut={onMouseOut}
+					/>
+				</ul>
+			) : (
+				<div className="header__menu_hamburger">
+					<div>
+						{open === false ? (
+							<GiHamburgerMenu
+								className="hamburger"
+								size={30}
+								onClick={handleOpen}
+							/>
+						) : (
+							<AiOutlineClose
+								className="hamburger"
+								size={30}
+								onClick={handleOpen}
+							/>
+						)}
+					</div>
+					{open === true ? (
+						<ul
+							className="header__menu_mobile"
+							style={{ backgroundColor: theme.body }}
+						>
+							<MobileHeaderList
+								theme={theme}
+								onMouseEnter={onMouseEnter}
+								onMouseOut={onMouseOut}
+							/>
+						</ul>
+					) : (
+						""
+					)}
+				</div>
+			)}
 		</header>
 	);
 };

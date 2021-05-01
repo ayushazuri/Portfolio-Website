@@ -2,7 +2,9 @@ import "./Introduction.scss";
 
 import React, { useContext } from "react";
 
+import Button from "../../StyledComponents/button.style.js";
 import FeelingProud from "./FeelingProud";
+import SocialMedia from "../../components/SocialMedia/SocialMedia";
 import ThemeContext from "../../theme.js";
 import { greeting } from "../../portfolio";
 
@@ -13,10 +15,10 @@ const Introduction = () => {
 			<div className="introduction__text">
 				<h1>{greeting.title}</h1>
 				<p style={{ color: Theme.secondaryText }}>{greeting.subTitle}</p>
+				<SocialMedia />
 				<div className="buttons">
-					<button>Contact me</button>
-					<button>Resume</button>
-					<button>Code</button>
+					<Button>Contact me</Button>
+					<Button>Resume</Button>
 				</div>
 			</div>
 			<div className="introduction__img">
