@@ -18,12 +18,21 @@
 }
 .header{
     display: flex;
+    width: -webkit-fill-available;
     justify-content: space-between;
     .header__logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-left: 40px;
-       font-family: "Agustina Regular";
+        text-align: center;
+    //    font-family: "Agustina Regular";
        float: left;
     }
+}
+.header__mobile{
+    display: block;
+    width: 100vw;
 }
 
 .header__menu_hamburger{

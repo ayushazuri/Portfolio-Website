@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, BrowserRouter as Router } from "react-router-dom";
 
 import React from "react";
 
@@ -7,8 +7,8 @@ const DesktopHeaderList = ({ theme, onMouseEnter, onMouseOut }) => {
 		<>
 			<li>
 				<p
-					to="/home"
-					tag={Link}
+					to="/"
+					// tag={Link}
 					activeStyle={{ fontWeight: "bold" }}
 					style={{ color: theme.text }}
 					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
@@ -19,14 +19,14 @@ const DesktopHeaderList = ({ theme, onMouseEnter, onMouseOut }) => {
 			</li>
 			<li>
 				<p
-					to="/education"
+					to="/skills"
 					tag={Link}
 					activeStyle={{ fontWeight: "bold" }}
 					style={{ color: theme.text }}
 					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
 					onMouseOut={(event) => onMouseOut(event)}
 				>
-					Education
+					Skills
 				</p>
 			</li>
 			<li>
@@ -51,6 +51,18 @@ const DesktopHeaderList = ({ theme, onMouseEnter, onMouseOut }) => {
 					onMouseOut={(event) => onMouseOut(event)}
 				>
 					Projects
+				</p>
+			</li>
+			<li>
+				<p
+					to="/education"
+					tag={Link}
+					activeStyle={{ fontWeight: "bold" }}
+					style={{ color: theme.text }}
+					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
+					onMouseOut={(event) => onMouseOut(event)}
+				>
+					Education
 				</p>
 			</li>
 			<li>

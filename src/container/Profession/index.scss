@@ -1,0 +1,39 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profession{
+ @include flex;
+    margin: 30px 35px 0 35px;
+    // flex-wrap: wrap;
+    @media (max-width: 800px){
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    &__left{
+        flex: 1 1;
+        display: flex;
+        justify-content: center;
+    }
+    &__left > *{
+        max-width: 100%;
+        height: auto;
+    }
+    &__right{
+        flex: 1 1;
+    }
+    &__heading{
+        font-size: 55px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    &__description{
+        font-size: 20px;
+        line-height: 40px;
+        margin-top: 0;
+        list-style-type: disc;
+        margin-top: 15px;
+    }
+}

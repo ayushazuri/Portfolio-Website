@@ -19,14 +19,14 @@ const MobileHeaderList = ({ theme, onMouseEnter, onMouseOut }) => {
 			</li>
 			<li>
 				<p
-					to="/education"
+					to="/home"
 					tag={Link}
 					activeStyle={{ fontWeight: "bold" }}
 					style={{ color: theme.text }}
 					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
 					onMouseOut={(event) => onMouseOut(event)}
 				>
-					Education
+					Skills
 				</p>
 			</li>
 			<li>
@@ -51,6 +51,18 @@ const MobileHeaderList = ({ theme, onMouseEnter, onMouseOut }) => {
 					onMouseOut={(event) => onMouseOut(event)}
 				>
 					Projects
+				</p>
+			</li>
+			<li>
+				<p
+					to="/education"
+					tag={Link}
+					activeStyle={{ fontWeight: "bold" }}
+					style={{ color: theme.text }}
+					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
+					onMouseOut={(event) => onMouseOut(event)}
+				>
+					Education
 				</p>
 			</li>
 			<li>

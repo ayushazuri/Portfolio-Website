@@ -9,6 +9,9 @@ export const GlobalStyles = createGlobalStyle`
   li{
     list-style-type: none;
   }
+  p, h1, h2, h3{
+    margin: 0;
+  }
   
   body {
     display: flex;

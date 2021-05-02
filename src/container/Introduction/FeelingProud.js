@@ -9,8 +9,8 @@ class FeelingProud extends Component {
 				id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd"
 				data-name="Layer 1"
 				xmlns="http://www.w3.org/2000/svg"
-				width="711.1879"
-				height="669.68268"
+				width="600"
+				height="600"
 				viewBox="0 0 711.1879 669.68268"
 			>
 				{/* <title>feeling_proud</title> */}

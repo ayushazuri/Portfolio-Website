@@ -42,4 +42,92 @@ const socialMediaLinks = [
 	},
 ];
 
-export { greeting, socialMediaLinks };
+const skills = {
+	descriptions: [
+		"Web developer who loves to explore and try different tech stacks and use them to make highly interactive and responsive Front-end / User interface for every web application",
+		"Loves coding and programming and using my knowledge of Data Structures and Algorithms to solve different problems.",
+	],
+	skills: [
+		{
+			name: "ReactJs",
+			style: {
+				color: "#61DAFB",
+			},
+		},
+		{
+			name: "Javascript",
+			style: {
+				backgroundColor: "#000000",
+				color: "#F7DF1E",
+			},
+		},
+		{
+			name: "CSS",
+			style: {
+				color: "#1572B6",
+			},
+		},
+		{
+			name: "SASS",
+			style: {
+				color: "#CC6699",
+			},
+		},
+		{
+			name: "HTML",
+			style: {
+				color: "#E34F26",
+			},
+		},
+		{
+			name: "GatsbyJS",
+			style: {
+				color: "#663399",
+			},
+		},
+		{
+			name: "Node.js",
+			style: {
+				color: "#339933",
+			},
+		},
+		{
+			name: "express.js",
+		},
+		{
+			name: "npm",
+			style: {
+				color: "#CB3837",
+			},
+		},
+		{
+			name: "Git",
+		},
+		{
+			name: "Firebase",
+			style: {
+				color: "#FFCA28",
+			},
+		},
+		{
+			name: "Adobe Xd",
+			style: {
+				color: "#FF2BC2",
+			},
+		},
+		{
+			name: "Java",
+		},
+		{
+			name: "Python",
+			style: {
+				backgroundColor: "transparent",
+				color: "#3776AB",
+			},
+		},
+		{
+			name: "MySQL",
+		},
+	],
+};
+export { greeting, socialMediaLinks, skills };

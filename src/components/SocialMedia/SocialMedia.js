@@ -19,7 +19,7 @@ import { socialMediaLinks } from "../../portfolio";
 // 	}
 // `;
 const SocialMedia = () => {
-	const name = (media) => {
+	const getSocialMediaComponent = (media) => {
 		const size = 40;
 		const style = {
 			fill: "white",
@@ -52,7 +52,7 @@ const SocialMedia = () => {
 						rel="noopener noreferrer"
 						className="socialmedia__links"
 					>
-						{name(media)}
+						{getSocialMediaComponent(media)}
 					</a>
 				);
 			})}

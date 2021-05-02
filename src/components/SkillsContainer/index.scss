@@ -1,0 +1,17 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill{
+    @include flex;
+    flex-direction: column;
+    &__container{
+        display: flex;
+        @include flex;
+        flex-wrap: wrap;
+        & > *{
+            margin: 10px;
+        }
+    }
+}

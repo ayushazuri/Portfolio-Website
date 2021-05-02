@@ -1,11 +1,11 @@
 import "./Header.scss";
 
-import { GiHamburgerMenu, GiToggles } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 import React, { useContext, useEffect, useState } from "react";
 
 import { AiOutlineClose } from "react-icons/ai";
 import DesktopHeaderList from "./DesktopHeaderList";
+import { GiHamburgerMenu } from "react-icons/gi";
 import MobileHeaderList from "./MobileHeaderList";
 import ThemeContext from "../../theme";
 
@@ -43,16 +43,29 @@ const Header = () => {
 	};
 
 	return (
-		<header className="header">
-			<h1 to={Link} tag={Link} className="header__logo">
-				<span style={{ color: theme.text }}> &lt;</span>
-				<span className="logo-name" style={{ color: theme.text }}>
-					Ayush Singh
-				</span>
-				<span style={{ color: theme.text }}> /&gt;</span>
-			</h1>
+		<header className={!open ? "header" : "header__mobile"}>
+			{/* <NavLink to="skills">Home</NavLink> */}
+			{!open && (
+				<h1 to={Link} tag={Link} className="header__logo">
+					<span style={{ color: theme.text }}> &lt;</span>
+					<span
+						className="logo-name"
+						style={{
+							color: theme.text,
+							fontFamily: "Agustina Regular",
+							margin: "2px 5px",
+						}}
+					>
+						Ayush Singh
+					</span>
+					<span style={{ color: theme.text }}> /&gt;</span>
+				</h1>
+			)}
 			{size > isMobileTablet ? (
-				<ul className="header__menu" style={{ backgroundColor: theme.body }}>
+				<ul
+					className="header__menu"
+					style={{ backgroundColor: theme.body, paddingLeft: "0" }}
+				>
 					<DesktopHeaderList
 						theme={theme}
 						onMouseEnter={onMouseEnter}
