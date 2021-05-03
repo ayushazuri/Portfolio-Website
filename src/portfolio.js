@@ -62,6 +62,12 @@ const skills = {
 			},
 		},
 		{
+			name: "Java",
+			style: {
+				color: "#5382A1",
+			},
+		},
+		{
 			name: "CSS",
 			style: {
 				color: "#1572B6",
@@ -71,6 +77,12 @@ const skills = {
 			name: "SASS",
 			style: {
 				color: "#CC6699",
+			},
+		},
+		{
+			name: "Bootstrap",
+			style: {
+				color: "#563d7c",
 			},
 		},
 		{
@@ -86,7 +98,7 @@ const skills = {
 			},
 		},
 		{
-			name: "Node.js",
+			name: "NodeJs",
 			style: {
 				color: "#339933",
 			},
@@ -102,11 +114,14 @@ const skills = {
 		},
 		{
 			name: "Git",
+			style: {
+				color: "#F1502F",
+			},
 		},
 		{
 			name: "Firebase",
 			style: {
-				color: "#FFCA28",
+				color: "#F6820D",
 			},
 		},
 		{
@@ -114,9 +129,6 @@ const skills = {
 			style: {
 				color: "#FF2BC2",
 			},
-		},
-		{
-			name: "Java",
 		},
 		{
 			name: "Python",
@@ -127,7 +139,95 @@ const skills = {
 		},
 		{
 			name: "MySQL",
+			style: {
+				color: "#00758F",
+			},
+		},
+	],
+	proficiency: [
+		{
+			skills: "ReactJS | GatsbyJS",
+			proficiency: "75%",
+		},
+		{
+			skills: "Javascript",
+			proficiency: "70%",
+		},
+		{
+			skills: "Java",
+			proficiency: "75%",
+		},
+		{
+			skills: "CSS | SASS | Bootstrap | HTML",
+			proficiency: "75%",
+		},
+		{
+			skills: "NPM | Git | Github",
+			proficiency: "60%",
+		},
+		{
+			skills: "NodeJS | ExpressJS",
+			proficiency: "50%",
+		},
+		{
+			skills: "Python | Firebase",
+			proficiency: "50%",
+		},
+		{
+			skills: "SQL | MySQL",
+			proficiency: "60%",
 		},
 	],
 };
-export { greeting, socialMediaLinks, skills };
+
+const rewfaLogo = require("./assets/Images/rewfa_logo.svg");
+const orcipLogo = require("./assets/Images/orcip_logo.png");
+const experience = {
+	descriptions: [
+		"I have worked for various startups as a Web Developer to use my skills for the company's growth and development. Because of this I have learnt alot as well and increased my knowledge and improved my skills ",
+	],
+	works: [{}],
+	internships: [
+		{
+			name: "REWFA Ecommerce Pvt. Ltd.",
+			role: "SDE Intern",
+			image: rewfaLogo,
+			tasks: [
+				"Built a fully responsive website of the E-Commerce Startup catering to various business needs from scratch using ReactJS.",
+				"Designed the UI/UX of the website using Adobe Xd.",
+			],
+			link: "https://rewfa.com/",
+			timeline: "12/2020 - Present",
+			location: "Mumbai",
+			technologies: [
+				"ReactJS",
+				"Javascript",
+				"CSS",
+				"Bootstrap",
+				"HTML",
+				"Adobe Xd",
+			],
+		},
+		{
+			name: "Orcip Systems Pvt. Ltd.",
+			role: "Web Developer Intern",
+			image: orcipLogo,
+			tasks: [
+				"Worked on companies website",
+				"Worked on some open source projects like custom-react-select",
+			],
+			link: "https://orcip.com/",
+			timeline: "03/2020 - 04/2020",
+			location: "Mumbai",
+			technologies: [
+				"ReactJS",
+				"GatsbyJS",
+				"Javascript",
+				"SASS",
+				"GraphQl",
+				"CSS",
+			],
+		},
+	],
+};
+export { greeting, socialMediaLinks, skills, experience };

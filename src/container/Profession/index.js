@@ -16,7 +16,7 @@ const Profession = () => {
 			<div className="profession__right">
 				<h1 className="profession__heading">What I DO?</h1>
 				<ul className="profession__descriptions">
-					{skills.descriptions.map((description, index) => {
+					{skills?.descriptions?.map((description, index) => {
 						return (
 							<li
 								key={index}

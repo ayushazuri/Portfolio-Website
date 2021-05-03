@@ -1,0 +1,19 @@
+.internship{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 35px 0 35px;
+    flex-direction: column;
+
+    &__cards{
+        display: flex;
+        flex-direction: row;
+    }
+    &__cards > *{
+        flex: 1 1;
+    }
+    h1{
+        font-weight: 500;
+        font-size: 45px;
+    }
+}

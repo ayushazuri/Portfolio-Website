@@ -43,7 +43,7 @@ const SocialMedia = () => {
 	};
 	return (
 		<div className="socialmedia">
-			{socialMediaLinks.map((media, index) => {
+			{socialMediaLinks?.map((media, index) => {
 				return (
 					<a
 						key={index}

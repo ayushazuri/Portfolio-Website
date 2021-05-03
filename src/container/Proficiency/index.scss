@@ -1,0 +1,23 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proficiency{
+    @include flex;
+    flex-direction: column;
+    margin: 30px 35px 0 35px;
+    h5{
+        font-size: 45px;
+        font-weight: 500;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        .proficiency__progressDiv{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

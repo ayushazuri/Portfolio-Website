@@ -13,10 +13,6 @@
 		url("./assets/fonts/GoogleSans-Bold.ttf") format("ttf");
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
-}
 html,
 body {
 	scroll-behavior: smooth;

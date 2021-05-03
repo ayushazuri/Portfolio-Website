@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
   li{
     list-style-type: none;
   }
-  p, h1, h2, h3{
+  p, h1, h2, h3, h4, h5, h6{
     margin: 0;
   }
   
@@ -23,6 +23,5 @@ export const GlobalStyles = createGlobalStyle`
     // height: 100vh;
      margin: 0;
      padding: 0;
-    /* font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; */
     transition: all 0.25s linear;
   }`;
