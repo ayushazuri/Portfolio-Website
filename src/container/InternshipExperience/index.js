@@ -7,7 +7,7 @@ import { experience } from "../../portfolio";
 const InternshipExperience = () => {
 	return (
 		<div className="internship">
-			<h1>Internship Experience</h1>
+			<h1>Internship Experiences</h1>
 			<div className="internship__cards">
 				{experience.internships?.map((internship, index) => {
 					return <ExperienceCard internship={internship} key={index} />;

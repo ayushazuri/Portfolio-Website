@@ -1,4 +1,6 @@
+import Degrees from "../container/Degrees";
 import Header from "../components/Header/Header";
+import InternshipExperience from "../container/InternshipExperience";
 import Introduction from "../container/Introduction/Introduction";
 import Layout from "../Layout/Layout";
 import Profession from "../container/Profession";
@@ -13,6 +15,8 @@ const Home = () => {
 				<Introduction />
 				<Profession />
 				<SkillsContainer />
+				<InternshipExperience />
+				<Degrees />
 			</Layout>
 		</div>
 	);

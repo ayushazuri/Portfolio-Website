@@ -8,13 +8,13 @@ import {
 	DiPython,
 	DiReact,
 } from "react-icons/di";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import {
 	SiAdobexd,
 	SiBootstrap,
 	SiFirebase,
 	SiJava,
 	SiJavascript,
+	SiMaterialUi,
 	SiMysql,
 	SiSass,
 } from "react-icons/si";
@@ -23,7 +23,10 @@ import { ImHtmlFive2 } from "react-icons/im";
 import React from "react";
 import { RiGatsbyLine } from "react-icons/ri";
 import ThemeContext from "../../theme";
+import Tooltip from "@material-ui/core/Tooltip";
 import { skills } from "../../portfolio";
+
+// import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const getSkillLogo = (skill) => {
 	const size = 50;
@@ -68,6 +71,8 @@ const getSkillLogo = (skill) => {
 	if (skill.name === "Java") return <SiJava size={size} style={style} />;
 	if (skill.name === "Python") return <DiPython size={size} style={style} />;
 	if (skill.name === "MySQL") return <SiMysql size={size} style={style} />;
+	if (skill.name === "Material UI")
+		return <SiMaterialUi size={size} style={style} />;
 };
 
 const SkillsContainer = () => {
@@ -78,29 +83,18 @@ const SkillsContainer = () => {
 			<div className="skill__container">
 				{skills?.skills?.map((skill) => {
 					return (
-						<OverlayTrigger
-							key={skill.name}
+						<Tooltip
+							title={skill.name}
+							arrow
+							enterDelay={250}
+							leaveDelay={300}
 							placement="top"
-							delay={{ show: 250, hide: 400 }}
-							overlay={
-								<Tooltip
-									className="skill__tooltip"
-									style={{
-										color: "white",
-										backgroundColor: theme.text,
-										padding: "2px 3px",
-										borderRadius: "2px",
-									}}
-								>
-									<strong style={{ fontWeight: "500" }}>{skill.name}</strong>
-								</Tooltip>
-							}
 						>
 							<div className="skill__logos">
 								<span className="skill__logo">{getSkillLogo(skill)}</span>
 								<small>{skill.name}</small>
 							</div>
-						</OverlayTrigger>
+						</Tooltip>
 					);
 				})}
 			</div>

@@ -7,6 +7,7 @@ import ThemeContext from "./theme";
 import { ThemeProvider } from "styled-components";
 
 function App() {
+	document.title = "Ayush's Portfolio";
 	return (
 		<ThemeProvider theme={Theme} name="Ayush">
 			<ThemeContext.Provider value={Theme}>

@@ -1,0 +1,59 @@
+.degreeCard{
+    margin: 10px 15px;
+    padding: 10px;
+    display: flex;
+    border-radius: 7px !important;
+    align-items: center;
+    max-width: 400px;
+    min-width: 338px;
+    // min-width: 290px;
+    border: 1px solid #d9dbdf;
+    height: 130px;
+   box-shadow: 5px 5px 5px #d9dbdf !important;
+
+    @media (max-width: 400px){
+        height: auto;
+    }
+   &__logo{
+       flex: 0.2 1;
+       margin-right: 15px;
+    //    display: block;
+       img{
+           border-radius: 50%;
+       }
+   }
+   &__details{
+       flex: 0.8 1;
+       text-align: left;
+    //    line-height: 1.8;
+       @media(max-width: 400px){
+           line-height: 2;
+           h4{
+               font-size: 14px;
+               line-height: 1.4;
+           }
+       }
+       h6{
+           font-size: 14px;
+            @media (max-width: 400px){
+                font-size: 12px;
+                line-height: 1.4;
+            }      
+       }
+       p{
+           font-size: 14px;
+           @media(max-width: 400px){
+                font-size: 11px;
+            }
+       }
+       div{
+           display: flex;
+           justify-content: space-between;
+           font-style: italic;
+           font-size:13px;
+            @media(max-width: 400px){
+                font-size: 11px;
+            }
+       }
+   }
+}

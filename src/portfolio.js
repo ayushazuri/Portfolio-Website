@@ -42,6 +42,24 @@ const socialMediaLinks = [
 	},
 ];
 
+const competitiveLinks = [
+	{
+		name: "HackerRank",
+		link: "https://www.hackerrank.com/ayushazuri",
+		backgroundColor: "#2bbf5f",
+	},
+	{
+		name: "GeeksForGeeks",
+		link: "https://auth.geeksforgeeks.org/user/ayushazuri/profile",
+		backgroundColor: "black",
+	},
+	{
+		name: "Leetcode",
+		link: "https://leetcode.com/ayushazuri/",
+		backgroundColor: "#008001",
+	},
+];
+
 const skills = {
 	descriptions: [
 		"Web developer who loves to explore and try different tech stacks and use them to make highly interactive and responsive Front-end / User interface for every web application",
@@ -83,6 +101,12 @@ const skills = {
 			name: "Bootstrap",
 			style: {
 				color: "#563d7c",
+			},
+		},
+		{
+			name: "Material UI",
+			style: {
+				color: "#2596be",
 			},
 		},
 		{
@@ -230,4 +254,35 @@ const experience = {
 		},
 	],
 };
-export { greeting, socialMediaLinks, skills, experience };
+
+const education = [
+	{
+		name: "Sardar Patel Institute of Technology",
+		timeline: "08/2017 - 06/2021",
+		pointer: "8.36",
+		branch: "Electronics and Telecommunication Engineering - B.Tech",
+		location: "Mumbai",
+	},
+	{
+		name: "Chandrabhan Sharma College",
+		timeline: "2014 - 2016",
+		pointer: "85.38%",
+		branch: "Higher Secondary Degree",
+		location: "Mumbai",
+	},
+	{
+		name: "St. Joseph's School",
+		timeline: "2002 - 2014",
+		pointer: "91.16%",
+		branch: "ICSE",
+		location: "Gorakhpur",
+	},
+];
+export {
+	greeting,
+	socialMediaLinks,
+	skills,
+	experience,
+	competitiveLinks,
+	education,
+};

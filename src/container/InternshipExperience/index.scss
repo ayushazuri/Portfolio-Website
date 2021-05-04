@@ -4,10 +4,14 @@
     align-items: center;
     margin: 30px 35px 0 35px;
     flex-direction: column;
-
+    h1{
+        text-align: center;
+    }
     &__cards{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     &__cards > *{
         flex: 1 1;
