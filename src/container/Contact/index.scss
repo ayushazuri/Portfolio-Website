@@ -1,0 +1,60 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    @include flex;
+    // width: 100vw;
+    margin: 80px 35px 0 35px;
+    flex-wrap: wrap;
+    &__image{
+        flex: 0.4 1;
+        @include flex;
+        & > *{
+            // width: 300px;
+            border-radius: 50%;
+            object-fit: contain;
+            
+        }
+    }
+    &__details{
+        flex: 0.6 1;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        h1{
+            font-size: 55px;
+            font-weight: 500;
+        }
+        @media(max-width: 950px){
+            .contact__logo{
+                width: 25px;
+                height: inherit;
+            }
+        }
+        p{
+            font-size: 20px;
+            // cursor: pointer;
+        }
+        div{
+            @include flex;
+            // flex-wrap: wrap;
+            & > * {
+                margin: 2px 5px 2px 0;
+            }
+        }
+        .contact__contact{
+            flex-wrap: wrap
+        }
+
+        .contact__button{
+            @include flex;
+            & > *{
+                margin: 0 5px;
+            }
+        }
+    }
+}

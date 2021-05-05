@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 
 import Button from "../../StyledComponents/button.style.js";
 import FeelingProud from "./FeelingProud";
-import SocialMedia from "../../components/SocialMedia/SocialMedia";
+import SocialMedia from "../../components/SocialMedia/";
 import ThemeContext from "../../theme.js";
 import { greeting } from "../../portfolio";
 

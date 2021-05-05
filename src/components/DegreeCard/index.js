@@ -21,7 +21,10 @@ const DegreeCard = ({ degree }) => {
 	};
 
 	return (
-		<Card className="degreeCard" style={{ color: theme.text }}>
+		<Card
+			className="degreeCard"
+			style={{ color: theme.text, backgroundColor: theme.body }}
+		>
 			<div className="degreeCard__logo">{getLogo(name)}</div>
 			<div className="degreeCard__details">
 				<h4>{name}</h4>

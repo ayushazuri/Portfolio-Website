@@ -22,7 +22,6 @@ import {
 import { ImHtmlFive2 } from "react-icons/im";
 import React from "react";
 import { RiGatsbyLine } from "react-icons/ri";
-import ThemeContext from "../../theme";
 import Tooltip from "@material-ui/core/Tooltip";
 import { skills } from "../../portfolio";
 
@@ -76,7 +75,6 @@ const getSkillLogo = (skill) => {
 };
 
 const SkillsContainer = () => {
-	const theme = React.useContext(ThemeContext);
 	return (
 		<div className="skill">
 			<h5>Skills</h5>

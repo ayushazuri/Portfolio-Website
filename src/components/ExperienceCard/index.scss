@@ -13,6 +13,11 @@
     min-width: 290px;
     border: 1px solid #d9dbdf;
     box-shadow: 5px 5px 5px #d9dbdf !important;
+
+    &:hover{
+        transform: scale(1.01);
+       transition: transform 0.3s ease-in-out;
+    }
     &__details{
         width: 100%;
         display: flex;

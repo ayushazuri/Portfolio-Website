@@ -1,3 +1,4 @@
+import Certification from "../container/Certification";
 import Degrees from "../container/Degrees";
 import EducationIntro from "../container/EducationIntro";
 import Layout from "../Layout/Layout";
@@ -8,6 +9,7 @@ const Education = () => {
 		<Layout>
 			<EducationIntro />
 			<Degrees />
+			<Certification />
 		</Layout>
 	);
 };
