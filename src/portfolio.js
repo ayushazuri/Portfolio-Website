@@ -326,11 +326,13 @@ const certifications = [
 ];
 
 const projects = {
-	description: "",
+	description:
+		"My projects makes use of vast variety of latest technology tools. My best experience is to create Web Development projects using ReactJS or other Technologies",
 	projects: [
 		{
 			name: "Portfolio Website",
 			githubLink: "https://github.com/ayushazuri/Portfolio-Website",
+			image: require("./assets/Images/portfolio.png"),
 			technologies: ["ReactJS", "Javascript", "SASS"],
 			websiteLink: "www.ayushazuri.com",
 			description:
@@ -339,6 +341,7 @@ const projects = {
 		{
 			name: "Amazon Clone",
 			githubLink: "https://github.com/ayushazuri/Amazon-Clone",
+			image: require("./assets/Images/Amazon.png"),
 			technologies: [
 				"ReactJS",
 				"Javascript",
@@ -354,6 +357,7 @@ const projects = {
 		{
 			name: "Netflix Clone",
 			githubLink: "https://github.com/ayushazuri/Netflix-Clone",
+			image: require("./assets/Images/Netflix.png"),
 			technologies: [
 				"ReactJS",
 				"Javascript",
@@ -366,54 +370,59 @@ const projects = {
 			description:
 				"Cloned Netflix Website using ReactJS and CSS, and used TMDB API for movie database, then deployed the website on Firebase",
 		},
-		{
-			name: "Zoom Clone",
-			githubLink: "https://github.com/ayushazuri/Zoom-Clone",
-			technologies: [
-				"Node.js",
-				"Express.js",
-				"Javascript",
-				"SASS",
-				"Socket.io",
-				"PeerJS",
-				"EJS",
-			],
-			websiteLink: "",
-			description:
-				"A Node.js project, made with the help of various other technologies like express.js, socket.io, ejs, and peerjs.",
-		},
-		{
-			name: "REWFA Website",
-			githubLink: "",
-			technologies: ["ReactJS", "Javascript", "CSS", "Bootstrap", "Adobe Xd"],
-			websiteLink: "https://rewfa.com/",
-			description:
-				"Built this fully responsive website of the E-Commerce Startup catering to various business needs from scratch using ReactJS.",
-		},
-		{
-			name: "Hotel Management System",
-			githubLink: "https://github.com/ayushazuri/hotel-management-system",
-			technologies: ["Java", "OOPS", "Multithreading"],
-			websiteLink: "",
-			description:
-				"A Java-based application for managing daily operations of a Hotel such as booking rooms, maintaining customer details, ordering food, and generating invoices. The app incorporates several concepts of Object- Oriented Programming and Exception Handling.",
-		},
-		{
-			name: "Food Recommendation System",
-			githubLink: "",
-			technologies: ["Python", "Machine Learning", "TF-IDF"],
-			websiteLink: "",
-			description:
-				"A System which predicts various dishes according to the user's past ordering history. It also predicts the best 3 restaurants (based on the restaurants' rating) where the user can find the predicted dish",
-		},
-		{
-			name: "Pharmacy Management System",
-			githubLink: "",
-			technologies: ["Java", "JDBC", "MySQL"],
-			websiteLink: "",
-			description:
-				"A User Friendly Java application interfaced with MySQL database using JDBC connectivity to efficiently perform various tasks for a pharmacy company.",
-		},
+		// {
+		// 	name: "Zoom Clone",
+		// 	githubLink: "https://github.com/ayushazuri/Zoom-Clone",
+		// 	image: require("./assets/Images/Amazon.png"),
+		// 	technologies: [
+		// 		"Node.js",
+		// 		"Express.js",
+		// 		"Javascript",
+		// 		"SASS",
+		// 		"Socket.io",
+		// 		"PeerJS",
+		// 		"EJS",
+		// 	],
+		// 	websiteLink: "",
+		// 	description:
+		// 		"A Node.js project, made with the help of various other technologies like express.js, socket.io, ejs, and peerjs.",
+		// },
+		// {
+		// 	name: "REWFA Website",
+		// 	githubLink: "",
+		// 	image: require("./assets/Images/Amazon.png"),
+		// 	technologies: ["ReactJS", "Javascript", "CSS", "Bootstrap", "Adobe Xd"],
+		// 	websiteLink: "https://rewfa.com/",
+		// 	description:
+		// 		"Built this fully responsive website of the E-Commerce Startup catering to various business needs from scratch using ReactJS.",
+		// },
+		// {
+		// 	name: "Hotel Management System",
+		// 	githubLink: "https://github.com/ayushazuri/hotel-management-system",
+		// 	image: require("./assets/Images/Amazon.png"),
+		// 	technologies: ["Java", "OOPS", "Multithreading"],
+		// 	websiteLink: "",
+		// 	description:
+		// 		"A Java-based application for managing daily operations of a Hotel such as booking rooms, maintaining customer details, ordering food, and generating invoices. The app incorporates several concepts of Object- Oriented Programming and Exception Handling.",
+		// },
+		// {
+		// 	name: "Food Recommendation System",
+		// 	githubLink: "",
+		// 	image: require("./assets/Images/Amazon.png"),
+		// 	technologies: ["Python", "Machine Learning", "TF-IDF"],
+		// 	websiteLink: "",
+		// 	description:
+		// 		"A System which predicts various dishes according to the user's past ordering history. It also predicts the best 3 restaurants (based on the restaurants' rating) where the user can find the predicted dish",
+		// },
+		// {
+		// 	name: "Pharmacy Management System",
+		// 	githubLink: "",
+		// 	image: require("./assets/Images/Amazon.png"),
+		// 	technologies: ["Java", "JDBC", "MySQL"],
+		// 	websiteLink: "",
+		// 	description:
+		// 		"A User Friendly Java application interfaced with MySQL database using JDBC connectivity to efficiently perform various tasks for a pharmacy company.",
+		// },
 	],
 };
 export {

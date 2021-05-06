@@ -22,7 +22,7 @@ const Button = styled.button`
 	&:hover {
 		background-color: ${({ theme }) => theme.jacketColor};
 		border: 1px solid ${({ theme }) => theme.jacketColor};
-		box-shadow: 2px 1px 3px 3px black;
+		box-shadow: 5px 8px 8px lightgray;
 	}
 `;
 

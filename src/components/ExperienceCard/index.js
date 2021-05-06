@@ -23,10 +23,10 @@ const ExperienceCard = ({ internship }) => {
 	const theme = React.useContext(ThemeContext);
 
 	const getLogo = (name) => {
-		if (name === "REWFA Ecommerce Pvt. Ltd.") return rewfa;
-		if (name === "Orcip Systems Pvt. Ltd.") return orcip;
+		if (name === "REWFA Ecommerce Pvt. Ltd.") return image.default;
+		if (name === "Orcip Systems Pvt. Ltd.") return image.default;
 	};
-
+	console.log(image);
 	return (
 		<Card
 			className="card"
