@@ -28,7 +28,7 @@ const Header = () => {
 	};
 	useEffect(() => {
 		window.addEventListener("resize", checkSize);
-
+		// window.addEventListener("scroll", stickyFunction);
 		return () => {
 			window.removeEventListener("resize", checkSize);
 		};
@@ -42,70 +42,86 @@ const Header = () => {
 		}
 	};
 
+	// const stickyFunction = () => {
+	// 	let header = document.getElementById("header");
+	// 	let sticky = header.offsetTop;
+
+	// 	window.pageYOffset >= sticky
+	// 		? header.classList.add("stickyHeader")
+	// 		: header.classList.remove("stickyHeader");
+	// };
+
+	//Look afterwards for a better solution!!
 	return (
-		<header className={!open ? "header" : "header__mobile"}>
-			{/* <NavLink to="skills">Home</NavLink> */}
-			{!open && (
-				<h1 to={Link} tag={Link} className="header__logo">
-					<span style={{ color: theme.text }}> &lt;</span>
-					<span
-						className="logo-name"
-						style={{
-							color: theme.text,
-							fontFamily: "Agustina Regular",
-							margin: "2px 5px",
-						}}
+		<div
+			id="header"
+			// className="stickyHeader"
+			style={{ backgroundColor: theme.body }}
+		>
+			<header className={!open ? "header" : "header__mobile"}>
+				{/* <NavLink to="skills">Home</NavLink> */}
+				{!open && (
+					<h1 to={Link} tag={Link} className="header__logo">
+						<span style={{ color: theme.text }}> &lt;</span>
+						<span
+							className="logo-name"
+							style={{
+								color: theme.text,
+								fontFamily: "Agustina Regular",
+								margin: "2px 5px",
+							}}
+						>
+							Ayush Singh
+						</span>
+						<span style={{ color: theme.text }}> /&gt;</span>
+					</h1>
+				)}
+				{size > isMobileTablet ? (
+					<ul
+						className="header__menu"
+						style={{ backgroundColor: theme.body, paddingLeft: "0" }}
 					>
-						Ayush Singh
-					</span>
-					<span style={{ color: theme.text }}> /&gt;</span>
-				</h1>
-			)}
-			{size > isMobileTablet ? (
-				<ul
-					className="header__menu"
-					style={{ backgroundColor: theme.body, paddingLeft: "0" }}
-				>
-					<DesktopHeaderList
-						theme={theme}
-						onMouseEnter={onMouseEnter}
-						onMouseOut={onMouseOut}
-					/>
-				</ul>
-			) : (
-				<div className="header__menu_hamburger">
-					<div>
-						{open === false ? (
-							<GiHamburgerMenu
-								className="hamburger"
-								size={30}
-								onClick={handleOpen}
-							/>
+						<DesktopHeaderList
+							theme={theme}
+							onMouseEnter={onMouseEnter}
+							onMouseOut={onMouseOut}
+						/>
+					</ul>
+				) : (
+					<div className="header__menu_hamburger">
+						<div>
+							{open === false ? (
+								<GiHamburgerMenu
+									className="hamburger"
+									size={30}
+									onClick={handleOpen}
+								/>
+							) : (
+								<AiOutlineClose
+									className="hamburger"
+									size={30}
+									onClick={handleOpen}
+								/>
+							)}
+						</div>
+						{open === true ? (
+							<ul
+								className="header__menu_mobile"
+								style={{ backgroundColor: theme.body }}
+							>
+								<MobileHeaderList
+									theme={theme}
+									onMouseEnter={onMouseEnter}
+									onMouseOut={onMouseOut}
+								/>
+							</ul>
 						) : (
-							<AiOutlineClose
-								className="hamburger"
-								size={30}
-								onClick={handleOpen}
-							/>
+							""
 						)}
 					</div>
-					{open === true ? (
-						<ul
-							className="header__menu_mobile"
-							style={{ backgroundColor: theme.body }}
-						>
-							<MobileHeaderList
-								theme={theme}
-								onMouseEnter={onMouseEnter}
-								onMouseOut={onMouseOut}
-							/>
-						</ul>
-					) : (
-						""
-					)}
-				</div>
-			)}
-		</header>
+				)}
+			</header>
+		</div>
 	);
 };
 

@@ -1,5 +1,6 @@
 .projectcard{
     max-width: 400px;
+    min-width: 330px;
     min-height:380px;
     // height: 400px;
     cursor: pointer;
@@ -52,6 +53,9 @@
             h3{ 
                 font-size: 25px;
             } 
+            p{
+                font-weight: 500;
+            }
             .technology{
                 display: flex;
                 flex-wrap: wrap;
@@ -77,6 +81,7 @@
         }   
         p{
             text-align: justify;
+            font-weight: 500;
         }
         & > *{
             margin-top: 10px;
@@ -85,6 +90,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (max-width: 900px){
+                flex-wrap: wrap;
+            }
             a > *{
                 & > *{
                     margin: 2px;

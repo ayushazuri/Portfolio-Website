@@ -10,7 +10,7 @@ const Degrees = () => {
 			<h1>Degrees</h1>
 			<div className="degree__cards">
 				{education.map((degree, index) => {
-					return <DegreeCard degree={degree} />;
+					return <DegreeCard key={index} degree={degree} />;
 				})}
 			</div>
 		</div>

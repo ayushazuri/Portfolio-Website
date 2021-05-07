@@ -1,7 +1,9 @@
 import "./index.scss";
 
+import Button from "../../StyledComponents/button.style.js";
 import ProjectCards from "../../components/ProjectCards";
 import React from "react";
+import { aboutMe } from "../../portfolio";
 import { projects } from "../../portfolio";
 
 const Project = () => {
@@ -13,6 +15,14 @@ const Project = () => {
 					return <ProjectCards project={project} key={index} />;
 				})}
 			</div>
+			<a
+				href={aboutMe.githubLink}
+				target="_blank"
+				rel="noopener noreferrer"
+				className="project__buttons"
+			>
+				<Button>More Projects</Button>
+			</a>
 		</div>
 	);
 };

@@ -11,11 +11,16 @@
     &__image{
         flex: 0.4 1;
         @include flex;
+        
         & > *{
             // width: 300px;
             border-radius: 50%;
             object-fit: contain;
-            
+            box-shadow: 0 30px 30px -30px #000;
+            transition: all .3s ease-out;
+            &:hover{
+                box-shadow: none;
+            }
         }
     }
     &__details{

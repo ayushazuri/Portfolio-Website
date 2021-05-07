@@ -5,8 +5,6 @@ import Button from "../../StyledComponents/button.style.js";
 import Card from "@material-ui/core/Card";
 import React from "react";
 import ThemeContext from "../../theme";
-import orcip from "../../assets/Images/orcip_logo.png";
-import rewfa from "../../assets/Images/rewfa_logo.svg";
 
 const ExperienceCard = ({ internship }) => {
 	const {
@@ -22,11 +20,6 @@ const ExperienceCard = ({ internship }) => {
 
 	const theme = React.useContext(ThemeContext);
 
-	const getLogo = (name) => {
-		if (name === "REWFA Ecommerce Pvt. Ltd.") return image.default;
-		if (name === "Orcip Systems Pvt. Ltd.") return image.default;
-	};
-	console.log(image);
 	return (
 		<Card
 			className="card"
@@ -38,7 +31,7 @@ const ExperienceCard = ({ internship }) => {
 			>
 				<div className="card__logo">
 					<img
-						src={getLogo(name)}
+						src={image}
 						alt=""
 						style={{
 							width: "70px",

@@ -3,6 +3,7 @@ import Degrees from "../container/Degrees";
 import EducationIntro from "../container/EducationIntro";
 import Layout from "../Layout/Layout";
 import React from "react";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Education = () => {
 	return (
@@ -10,6 +11,7 @@ const Education = () => {
 			<EducationIntro />
 			<Degrees />
 			<Certification />
+			<ScrollToTop />
 		</Layout>
 	);
 };

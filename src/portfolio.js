@@ -9,12 +9,15 @@ const aboutMe = {
 		"https://drive.google.com/file/d/1XjFLW-pYzVrkwhvsoELtodBwQuG4bAkc/view?usp=sharing",
 	openForOpportunity: "Yes",
 	message: "My inbox is open for all. Contact me any time.",
-	portfolio_repository: "https://github.com/ayushazuri/portfolio-webiste",
+	portfolio_repository: "https://github.com/ayushazuri/Portfolio-Website",
+	linkedin: "https://www.linkedin.com/in/ayush-singh1998/",
+	githubLink: "https://github.com/ayushazuri",
+	profilePhoto: require("./assets/Images/profile.jpeg").default,
 };
 
 const greeting = {
 	title: "Ayush Singh",
-	logo_name: "AshutoshHathidara",
+	logo_name: "AyushSingh",
 	subTitle:
 		"An Engineering graduate with a keen passion for Software Development to leverage my skills in Web Development, Java, Data Structures, Algorithms and SQL. Having good Programming and Problem-Solving Skills. Willing to learn new technologies with a receptive mind and diligence.",
 	resumeLink:
@@ -217,8 +220,6 @@ const skills = {
 	],
 };
 
-const rewfaLogo = require("./assets/Images/rewfa_logo.svg");
-const orcipLogo = require("./assets/Images/orcip_logo.png");
 const experience = {
 	descriptions: [
 		"I have worked for various startups as a Web Developer to use my skills for the company's growth and development. Because of this I have learnt alot as well and increased my knowledge and improved my skills ",
@@ -228,7 +229,7 @@ const experience = {
 		{
 			name: "REWFA Ecommerce Pvt. Ltd.",
 			role: "SDE Intern",
-			image: rewfaLogo,
+			image: require("./assets/Images/rewfa_logo.svg").default,
 			tasks: [
 				"Built a fully responsive website of the E-Commerce Startup catering to various business needs from scratch using ReactJS.",
 				"Designed the UI/UX of the website using Adobe Xd.",
@@ -248,7 +249,7 @@ const experience = {
 		{
 			name: "Orcip Systems Pvt. Ltd.",
 			role: "Web Developer Intern",
-			image: orcipLogo,
+			image: require("./assets/Images/orcip_logo.png").default,
 			tasks: [
 				"Worked on companies website",
 				"Worked on some open source projects like custom-react-select",
@@ -275,6 +276,7 @@ const education = [
 		pointer: "8.36",
 		branch: "Electronics and Telecommunication Engineering - B.Tech",
 		location: "Mumbai",
+		image: require("./assets/Images/SPIT_logo.png").default,
 	},
 	{
 		name: "Chandrabhan Sharma College",
@@ -282,6 +284,7 @@ const education = [
 		pointer: "85.38%",
 		branch: "Higher Secondary Degree",
 		location: "Mumbai",
+		image: require("./assets/Images/csc.png").default,
 	},
 	{
 		name: "St. Joseph's School",
@@ -289,6 +292,7 @@ const education = [
 		pointer: "91.16%",
 		branch: "ICSE",
 		location: "Gorakhpur",
+		image: require("./assets/Images/sjic.png").default,
 	},
 ];
 
@@ -298,30 +302,35 @@ const certifications = [
 		author: "DS Guy",
 		source: "Udemy",
 		link: "https://www.udemy.com/home/my-courses/learning/",
+		image: require("./assets/Images/udemy.png").default,
 	},
 	{
 		name: "SQL for Data Science",
 		author: "University of California, Davis",
 		source: "Coursera",
-		link: "https://www.udemy.com/home/my-courses/learning/",
+		link: "https://coursera.org/share/b44da8f77e30687fd8a36167c9231f03",
+		image: require("./assets/Images/coursera.png").default,
 	},
 	{
 		name: "Data Structures & Algorithms!",
 		author: "DS Guy",
 		source: "Udemy",
 		link: "https://www.udemy.com/home/my-courses/learning/",
+		image: require("./assets/Images/udemy.png").default,
 	},
 	{
 		name: "Java (Basics)",
 		author: "HackerRank",
 		source: "HackerRank",
 		link: "https://www.hackerrank.com/certificates/af3dc76908c1",
+		image: require("./assets/Images/hackerrank.png").default,
 	},
 	{
 		name: "Problem Solving (Basics)",
 		author: "HackerRank",
 		source: "HackerRank",
 		link: "https://www.hackerrank.com/certificates/f2840e54e4b0",
+		image: require("./assets/Images/hackerrank.png").default,
 	},
 ];
 
@@ -332,7 +341,7 @@ const projects = {
 		{
 			name: "Portfolio Website",
 			githubLink: "https://github.com/ayushazuri/Portfolio-Website",
-			image: require("./assets/Images/portfolio.png"),
+			image: require("./assets/Images/portfolio.png").default,
 			technologies: ["ReactJS", "Javascript", "SASS"],
 			websiteLink: "www.ayushazuri.com",
 			description:
@@ -341,7 +350,7 @@ const projects = {
 		{
 			name: "Amazon Clone",
 			githubLink: "https://github.com/ayushazuri/Amazon-Clone",
-			image: require("./assets/Images/Amazon.png"),
+			image: require("./assets/Images/Amazon.png").default,
 			technologies: [
 				"ReactJS",
 				"Javascript",
@@ -357,7 +366,7 @@ const projects = {
 		{
 			name: "Netflix Clone",
 			githubLink: "https://github.com/ayushazuri/Netflix-Clone",
-			image: require("./assets/Images/Netflix.png"),
+			image: require("./assets/Images/Netflix.png").default,
 			technologies: [
 				"ReactJS",
 				"Javascript",
@@ -370,59 +379,59 @@ const projects = {
 			description:
 				"Cloned Netflix Website using ReactJS and CSS, and used TMDB API for movie database, then deployed the website on Firebase",
 		},
-		// {
-		// 	name: "Zoom Clone",
-		// 	githubLink: "https://github.com/ayushazuri/Zoom-Clone",
-		// 	image: require("./assets/Images/Amazon.png"),
-		// 	technologies: [
-		// 		"Node.js",
-		// 		"Express.js",
-		// 		"Javascript",
-		// 		"SASS",
-		// 		"Socket.io",
-		// 		"PeerJS",
-		// 		"EJS",
-		// 	],
-		// 	websiteLink: "",
-		// 	description:
-		// 		"A Node.js project, made with the help of various other technologies like express.js, socket.io, ejs, and peerjs.",
-		// },
-		// {
-		// 	name: "REWFA Website",
-		// 	githubLink: "",
-		// 	image: require("./assets/Images/Amazon.png"),
-		// 	technologies: ["ReactJS", "Javascript", "CSS", "Bootstrap", "Adobe Xd"],
-		// 	websiteLink: "https://rewfa.com/",
-		// 	description:
-		// 		"Built this fully responsive website of the E-Commerce Startup catering to various business needs from scratch using ReactJS.",
-		// },
-		// {
-		// 	name: "Hotel Management System",
-		// 	githubLink: "https://github.com/ayushazuri/hotel-management-system",
-		// 	image: require("./assets/Images/Amazon.png"),
-		// 	technologies: ["Java", "OOPS", "Multithreading"],
-		// 	websiteLink: "",
-		// 	description:
-		// 		"A Java-based application for managing daily operations of a Hotel such as booking rooms, maintaining customer details, ordering food, and generating invoices. The app incorporates several concepts of Object- Oriented Programming and Exception Handling.",
-		// },
-		// {
-		// 	name: "Food Recommendation System",
-		// 	githubLink: "",
-		// 	image: require("./assets/Images/Amazon.png"),
-		// 	technologies: ["Python", "Machine Learning", "TF-IDF"],
-		// 	websiteLink: "",
-		// 	description:
-		// 		"A System which predicts various dishes according to the user's past ordering history. It also predicts the best 3 restaurants (based on the restaurants' rating) where the user can find the predicted dish",
-		// },
-		// {
-		// 	name: "Pharmacy Management System",
-		// 	githubLink: "",
-		// 	image: require("./assets/Images/Amazon.png"),
-		// 	technologies: ["Java", "JDBC", "MySQL"],
-		// 	websiteLink: "",
-		// 	description:
-		// 		"A User Friendly Java application interfaced with MySQL database using JDBC connectivity to efficiently perform various tasks for a pharmacy company.",
-		// },
+		{
+			name: "Zoom Clone",
+			githubLink: "https://github.com/ayushazuri/Zoom-Clone",
+			image: require("./assets/Images/Amazon.png").default,
+			technologies: [
+				"Node.js",
+				"Express.js",
+				"Javascript",
+				"SASS",
+				"Socket.io",
+				"PeerJS",
+				"EJS",
+			],
+			websiteLink: "",
+			description:
+				"A Node.js project, made with the help of various other technologies like express.js, socket.io, ejs, and peerjs.",
+		},
+		{
+			name: "REWFA Website",
+			githubLink: "",
+			image: require("./assets/Images/rewfa.png").default,
+			technologies: ["ReactJS", "Javascript", "CSS", "Bootstrap", "Adobe Xd"],
+			websiteLink: "https://rewfa.com/",
+			description:
+				"Built this fully responsive website of the E-Commerce Startup catering to various business needs from scratch using ReactJS.",
+		},
+		{
+			name: "Hotel Management System",
+			githubLink: "https://github.com/ayushazuri/hotel-management-system",
+			image: require("./assets/Images/java1.jpg").default,
+			technologies: ["Java", "OOPS", "Multithreading"],
+			websiteLink: "",
+			description:
+				"A Java-based application for managing daily operations of a Hotel such as booking rooms, maintaining customer details, ordering food, and generating invoices. The app incorporates several concepts of Object- Oriented Programming and Exception Handling.",
+		},
+		{
+			name: "Food Recommendation System",
+			githubLink: "",
+			image: require("./assets/Images/python.jpg").default,
+			technologies: ["Python", "Machine Learning", "TF-IDF"],
+			websiteLink: "",
+			description:
+				"A System which predicts various dishes according to the user's past ordering history. It also predicts the best 3 restaurants (based on the restaurants' rating) where the user can find the predicted dish",
+		},
+		{
+			name: "Pharmacy Management System",
+			githubLink: "",
+			image: require("./assets/Images/sql.png").default,
+			technologies: ["Java", "JDBC", "MySQL"],
+			websiteLink: "",
+			description:
+				"A User Friendly Java application interfaced with MySQL database using JDBC connectivity to efficiently perform various tasks for a pharmacy company.",
+		},
 	],
 };
 export {

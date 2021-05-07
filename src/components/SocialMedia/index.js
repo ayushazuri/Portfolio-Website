@@ -9,18 +9,18 @@ import { GrFacebookOption } from "react-icons/gr";
 import React from "react";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { socialMediaLinks } from "../../portfolio";
+import styled from "styled-components";
 
-// import styled from "styled-components";
-
-// const IconWrapper = styled.span`
-// 	&:hover > *{
-// 		background-color: ${({ theme }) => theme.text};
-// 		transition: 0.3s ease-in;
-// 	}
-// `;
+const IconWrapper = styled.span`
+	&:hover > * {
+		background-color: #000 !important;
+		transition: 0.4s ease-in;
+	}
+`;
 const SocialMedia = () => {
 	const getSocialMediaComponent = (media) => {
 		const size = 40;
+
 		const style = {
 			fill: "white",
 			backgroundColor: media.backgroundColor,
@@ -28,6 +28,7 @@ const SocialMedia = () => {
 			borderRadius: "50%",
 			margin: "5px",
 		};
+
 		if (media.name === "Github")
 			return <AiFillGithub size={size} style={style} />;
 		if (media.name === "LinkedIn")
@@ -52,7 +53,7 @@ const SocialMedia = () => {
 						rel="noopener noreferrer"
 						className="socialmedia__links"
 					>
-						{getSocialMediaComponent(media)}
+						<IconWrapper>{getSocialMediaComponent(media)}</IconWrapper>
 					</a>
 				);
 			})}

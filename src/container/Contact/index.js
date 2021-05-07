@@ -8,7 +8,6 @@ import {
 } from "react-icons/ai";
 
 import Button from "../../StyledComponents/button.style.js";
-import Profile from "../../assets/Images/profile.jpeg";
 import React from "react";
 import SocialMedia from "../../components/SocialMedia";
 import ThemeContext from "../../theme";
@@ -17,6 +16,7 @@ import { aboutMe } from "../../portfolio";
 const Contact = ({ isFooter }) => {
 	const {
 		name,
+		profilePhoto,
 		email,
 		phone,
 		address,
@@ -31,7 +31,7 @@ const Contact = ({ isFooter }) => {
 		<div className="contact">
 			<div className="contact__image">
 				<img
-					src={Profile}
+					src={profilePhoto}
 					alt=""
 					style={{ border: `9px solid ${theme.text}` }}
 				/>

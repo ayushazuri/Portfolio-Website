@@ -67,14 +67,14 @@ const DesktopHeaderList = ({ theme, onMouseEnter, onMouseOut }) => {
 			</li>
 			<li>
 				<p
-					to="/projects"
+					to="/about"
 					tag={Link}
 					activeStyle={{ fontWeight: "bold" }}
 					style={{ color: theme.text }}
 					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
 					onMouseOut={(event) => onMouseOut(event)}
 				>
-					Contact me
+					About me
 				</p>
 			</li>
 		</>

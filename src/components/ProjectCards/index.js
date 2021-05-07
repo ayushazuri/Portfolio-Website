@@ -26,7 +26,7 @@ const ProjectCards = ({ project }) => {
 		>
 			<div className="projectCard">
 				<div className="projectcard__front">
-					<img src={image.default} alt="" />
+					<img src={image} alt="" />
 					<div className="front__details">
 						<h3>{name}</h3>
 						<div className="technologies">
@@ -45,10 +45,20 @@ const ProjectCards = ({ project }) => {
 					<p>{description}</p>
 					<div className="buttons">
 						{githubLink ? (
-							<a href={githubLink} target="_blank" rel="noreferrer">
+							<a href={githubLink} target="_blank" rel="noopener noreferrer">
 								<Button>
 									<AiFillGithub />
 									<p>Source Code</p>
+								</Button>
+							</a>
+						) : (
+							""
+						)}
+						{websiteLink ? (
+							<a href={websiteLink} target="_blank" rel="noopener noreferrer">
+								<Button>
+									<AiFillGithub />
+									<p>Visit Website</p>
 								</Button>
 							</a>
 						) : (

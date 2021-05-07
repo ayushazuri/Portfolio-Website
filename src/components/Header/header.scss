@@ -16,6 +16,15 @@
     
 
 }
+
+.stickyHeader{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transition: all 0.5s;
+}
 .header{
     display: flex;
     justify-content: space-between;

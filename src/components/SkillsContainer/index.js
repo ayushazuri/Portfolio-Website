@@ -79,10 +79,11 @@ const SkillsContainer = () => {
 		<div className="skill">
 			<h5>Skills</h5>
 			<div className="skill__container">
-				{skills?.skills?.map((skill) => {
+				{skills?.skills?.map((skill, index) => {
 					return (
 						<Tooltip
 							title={skill.name}
+							key={index}
 							arrow
 							enterDelay={250}
 							leaveDelay={300}

@@ -9,16 +9,19 @@ import ThemeContext from "../../theme.js";
 import { greeting } from "../../portfolio";
 
 const Introduction = () => {
+	const { title, subTitle, resumeLink } = greeting;
 	const Theme = useContext(ThemeContext);
 	return (
 		<div className="introduction">
 			<div className="introduction__text">
-				<h1>{greeting.title}</h1>
-				<p style={{ color: Theme.secondaryText }}>{greeting.subTitle}</p>
+				<h1>{title}</h1>
+				<p style={{ color: Theme.secondaryText }}>{subTitle}</p>
 				<SocialMedia />
 				<div className="buttons">
 					<Button>Contact me</Button>
-					<Button>Resume</Button>
+					<a href={resumeLink} target="_blank" rel="noreferrer">
+						<Button>Resume</Button>
+					</a>
 				</div>
 			</div>
 			<div className="introduction__img">

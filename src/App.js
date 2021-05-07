@@ -1,5 +1,3 @@
-import "./App.css";
-
 import { GlobalStyles } from "./globalcss";
 import Main from "./container/Main";
 import { Theme } from "./theme";

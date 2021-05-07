@@ -1,11 +1,8 @@
-import Contact from "../Contact";
 import React from "react";
 
 const Footer = () => {
-	const isFooter = true;
 	return (
 		<div>
-			<Contact isFooter={isFooter} />
 			<div
 				className="footer"
 				style={{

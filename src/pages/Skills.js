@@ -2,6 +2,7 @@ import Layout from "../Layout/Layout";
 import Profession from "../container/Profession";
 import Proficiency from "../container/Proficiency";
 import React from "react";
+import ScrollToTop from "../components/ScrollToTop";
 import SkillsContainer from "../components/SkillsContainer";
 
 const Skills = () => {
@@ -10,6 +11,7 @@ const Skills = () => {
 			<Profession />
 			<SkillsContainer />
 			<Proficiency />
+			<ScrollToTop />
 		</Layout>
 	);
 };
