@@ -7,35 +7,54 @@
     @include flex;
     flex-direction: column;
     margin: 30px 35px 0 35px;
-    h5{
-        font-size: 45px;
-        font-weight: 500;
-    }
-    &__container{
-        display: flex;
-        @include flex;
+    flex-direction: row;
+    @media (max-width: 800px){
         flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    &__left{
+        flex: 1 1;
         & > *{
-            margin: 10px 15px 0 15px;
-        }
-        @media(min-width: 1200px)
-        {
-            width: 65%;
-        }
-        @media(min-width: 1200px)
-        {
-            width: 75%;
+            max-width: 100%;
+            height: auto;
         }
     }
 
-    &__logos{
+    &__right{
+        flex: 1 1;
         @include flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        height: 80px;
-        cursor: pointer;
-        small{
-            font-weight: 600;
+
+        h5{
+            font-size: 45px;
+            font-weight: 500;
+        }
+        .skill__container{
+            @include flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            & > *{
+                margin: 10px 15px 0 15px;
+            }
+            @media(min-width: 1200px)
+            {
+                width: 65%;
+            }
+            @media(min-width: 1200px)
+            {
+                width: 75%;
+            }
+        }
+
+        .skill__logos{
+            @include flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 80px;
+            cursor: pointer;
+            small{
+                font-weight: 600;
+            }
         }
     }
 }

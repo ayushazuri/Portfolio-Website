@@ -5,6 +5,7 @@ import Badge from "../../StyledComponents/Badge.style.js";
 import Button from "../../StyledComponents/button.style.js";
 import Card from "@material-ui/core/Card";
 import React from "react";
+import { Slide } from "react-reveal";
 import ThemeContext from "../../theme";
 
 const ProjectCards = ({ project }) => {
@@ -20,6 +21,7 @@ const ProjectCards = ({ project }) => {
 	const theme = React.useContext(ThemeContext);
 
 	return (
+		// <Slide duration={2000} bottom>
 		<Card
 			className="projectcard"
 			style={{ color: theme.text, backgroundColor: theme.body }}
@@ -68,6 +70,7 @@ const ProjectCards = ({ project }) => {
 				</div>
 			</div>
 		</Card>
+		// </Slide>
 	);
 };
 

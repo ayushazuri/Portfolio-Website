@@ -19,13 +19,14 @@ import {
 	SiSass,
 } from "react-icons/si";
 
+import { Fade } from "react-reveal";
 import { ImHtmlFive2 } from "react-icons/im";
 import React from "react";
 import { RiGatsbyLine } from "react-icons/ri";
+import SkillImg from "./SkillImg";
+import ThemeContext from "../../theme";
 import Tooltip from "@material-ui/core/Tooltip";
 import { skills } from "../../portfolio";
-
-// import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const getSkillLogo = (skill) => {
 	const size = 50;
@@ -74,29 +75,42 @@ const getSkillLogo = (skill) => {
 		return <SiMaterialUi size={size} style={style} />;
 };
 
+<Fade duration={2000}></Fade>;
 const SkillsContainer = () => {
+	const theme = React.useContext(ThemeContext);
+
 	return (
 		<div className="skill">
-			<h5>Skills</h5>
-			<div className="skill__container">
-				{skills?.skills?.map((skill, index) => {
-					return (
-						<Tooltip
-							title={skill.name}
-							key={index}
-							arrow
-							enterDelay={250}
-							leaveDelay={300}
-							placement="top"
-						>
-							<div className="skill__logos">
-								<span className="skill__logo">{getSkillLogo(skill)}</span>
-								<small>{skill.name}</small>
-							</div>
-						</Tooltip>
-					);
-				})}
-			</div>
+			<Fade duration={2000} left>
+				<div className="skill__left">
+					<SkillImg theme={theme} />
+				</div>
+			</Fade>
+			<Fade duration={2000} right>
+				<div className="skill__right">
+					<h5>Skills</h5>
+					<div className="skill__container">
+						{skills?.skills?.map((skill, index) => {
+							return (
+								<Tooltip
+									title={skill.name}
+									key={index}
+									arrow
+									enterDelay={250}
+									leaveDelay={300}
+									placement="top"
+								>
+									<div className="skill__logos">
+										<span className="skill__logo">{getSkillLogo(skill)}</span>
+										<small>{skill.name}</small>
+									</div>
+								</Tooltip>
+							);
+						})}
+					</div>
+				</div>
+			</Fade>
+			;
 		</div>
 	);
 };

@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const ProgressBar = ({ bgColor, progress }) => {
-	// const [value, setValue] = React.useState(0);
-	// React.useEffect(() => {
-	// 	setTimeout(() => {
-	// 		setValue(progress);
-	// 	}, 2000);
-	// }, [progress]);
+	const [value, setValue] = React.useState(0);
+	React.useEffect(() => {
+		setTimeout(() => {
+			setValue(progress);
+		}, 800);
+	}, [progress]);
+
 	const ProgressContainer = styled.div`
 		height: 20px;
 		width: 100%;
@@ -17,12 +18,11 @@ const ProgressBar = ({ bgColor, progress }) => {
 	`;
 	const ProgressFiller = styled.div`
 		height: 100%;
-		width: ${progress};
+		width: ${value};
 		background-color: ${bgColor};
 		border-radius: inherit;
 		text-align: right;
-		/* transition: width 5s ease-in-out;
-		transition-delay: 0.5s; */
+		transition: all 10s ease-in-out;
 	`;
 
 	const ProgressLabel = styled.span`
@@ -34,7 +34,7 @@ const ProgressBar = ({ bgColor, progress }) => {
 	return (
 		<ProgressContainer>
 			<ProgressFiller>
-				<ProgressLabel>{progress}</ProgressLabel>
+				{/* <ProgressLabel>{progress}</ProgressLabel> */}
 			</ProgressFiller>
 		</ProgressContainer>
 	);
