@@ -2,8 +2,6 @@
 .card{
     margin: 10px;
     background-color: white;
-    // border: 2px solid;
-    // padding: 10px;
     border-radius: 7px !important;
     display: flex;
     align-items: flex-start;
@@ -13,7 +11,7 @@
     min-width: 290px;
     border: 1px solid #d9dbdf;
     box-shadow: 5px 5px 5px #d9dbdf !important;
-
+    flex: 1 1;
     &:hover{
         transform: scale(1.01);
        transition: transform 0.3s ease-in-out;

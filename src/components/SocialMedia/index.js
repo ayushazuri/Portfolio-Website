@@ -6,6 +6,7 @@ import {
 } from "react-icons/ai";
 
 import { GrFacebookOption } from "react-icons/gr";
+import { MdCall } from "react-icons/md";
 import React from "react";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { socialMediaLinks } from "../../portfolio";
@@ -41,6 +42,7 @@ const SocialMedia = () => {
 			return <AiOutlineTwitter size={size} style={style} />;
 		if (media.name === "Gmail")
 			return <AiOutlineGoogle size={size} style={style} />;
+		if (media.name === "Telephone") return <MdCall size={size} style={style} />;
 	};
 	return (
 		<div className="socialmedia">
@@ -49,7 +51,7 @@ const SocialMedia = () => {
 					<a
 						key={index}
 						href={media.link}
-						target="_blank"
+						target={media.name === "Telephone" ? "_self" : "_blank"}
 						rel="noopener noreferrer"
 						className="socialmedia__links"
 					>

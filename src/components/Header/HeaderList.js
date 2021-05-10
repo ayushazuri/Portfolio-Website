@@ -1,14 +1,14 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, BrowserRouter as Router } from "react-router-dom";
 
 import React from "react";
 
-const MobileHeaderList = ({ theme, onMouseEnter, onMouseOut }) => {
+const HeaderList = ({ theme, onMouseEnter, onMouseOut }) => {
 	return (
 		<>
 			<li>
 				<p
-					to="/home"
-					tag={Link}
+					to="/"
+					// tag={Link}
 					activeStyle={{ fontWeight: "bold" }}
 					style={{ color: theme.text }}
 					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
@@ -81,4 +81,4 @@ const MobileHeaderList = ({ theme, onMouseEnter, onMouseOut }) => {
 	);
 };
 
-export default MobileHeaderList;
+export default HeaderList;

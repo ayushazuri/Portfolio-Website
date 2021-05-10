@@ -1,7 +1,10 @@
-.projectintro{
+@mixin flex{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.achievement{
+    @include flex;
     margin: 30px 35px 0 35px;
     @media (max-width: 800px){
         flex-wrap: wrap;
@@ -9,26 +12,26 @@
         margin: 30px 15px 0 15px;
     }
     &__left{
-        flex: 1 1 ;
-        & > * {
+        flex: 1 1;
+        & > *{
             max-width: 100%;
             height: auto;
         }
     }
     &__right{
         flex: 1 1;
+        margin: 10px;
+        padding: 20px;
         text-align: center;
-        padding: 20px 30px;
         h1{
-            font-size: 55px;
+            font-size: 45px;
             font-weight: 500;
         }
-        p{
+        ul > *{
+            list-style-type: disc;
+            text-align: left;
+            line-height: 2;
             font-size: 20px;
-            font-weight: 500;
-            // line-height: 40px;
-        text-align: center;
-
         }
     }
 }

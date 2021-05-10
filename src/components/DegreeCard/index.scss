@@ -6,15 +6,12 @@
     max-width: 400px;
     min-width: 338px;
     @media (max-width: 600px){
-        min-width: 400px;
+        width: 366px;
+        margin: 0;
     }
     border: 1px solid #d9dbdf;
     height: 130px;
     box-shadow: 5px 5px 5px #d9dbdf !important;
-//    &:hover{
-//        transform: scale(1.01);
-//        transition: transform 0.2s ease-in-out;
-//     }
     @media (max-width: 400px){
         height: auto;
     }

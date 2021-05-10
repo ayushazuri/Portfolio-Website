@@ -1,3 +1,4 @@
+import Achievements from "../container/Achievement";
 import Contact from "../container/Contact";
 import Footer from "../container/Footer";
 import Header from "../components/Header/Header";
@@ -5,6 +6,7 @@ import React from "react";
 import ScrollToTop from "../components/ScrollToTop";
 
 const AboutMe = () => {
+	const isAboutPage = false;
 	return (
 		<div
 			style={{
@@ -14,8 +16,9 @@ const AboutMe = () => {
 				justifyContent: "space-between",
 			}}
 		>
-			<Header />
+			<Header isAboutPage={isAboutPage} />
 			<Contact />
+			<Achievements />
 			<ScrollToTop />
 			<Footer />
 		</div>

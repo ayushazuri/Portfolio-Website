@@ -2,16 +2,12 @@
     max-width: 400px;
     min-width: 330px;
     min-height:380px;
-    // height: 400px;
     cursor: pointer;
     perspective: 1000px;   
     border-radius: 7px !important;
     border: 1px solid #d9dbdf;
     box-shadow: 5px 5px 5px #d9dbdf !important;
-    // margin: 10px;
-    // flex: 1 1;
-        
-        // min-width: 280px;
+
     &__front > img{
         width: 100%;
         height: auto;
@@ -78,6 +74,7 @@
         justify-content: center;
         text-align: center;
         padding: 15px;
+        overflow: auto; //Can be removed. Added just for experimental purposes!
         h3{ 
             font-size: 25px;
             margin-bottom: 5px;

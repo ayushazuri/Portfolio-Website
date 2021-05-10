@@ -17,9 +17,7 @@ const Introduction = () => {
 		<Fade bottom duration={2000}>
 			<div className="introduction">
 				<div className="introduction__text">
-					<Jump delay={2000}>
-						<h1>{title}</h1>
-					</Jump>
+					<h1>{title}</h1>
 
 					<p style={{ color: Theme.secondaryText }}>{subTitle}</p>
 					<SocialMedia />

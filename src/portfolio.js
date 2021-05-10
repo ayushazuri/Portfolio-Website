@@ -56,6 +56,11 @@ const socialMediaLinks = [
 		link: "https://www.instagram.com/chandler__uchiha/",
 		backgroundColor: "#E4405F",
 	},
+	{
+		name: "Telephone",
+		link: "tel:9892770647",
+		backgroundColor: "#1180FF",
+	},
 ];
 
 const competitiveLinks = [
@@ -434,6 +439,13 @@ const projects = {
 		},
 	],
 };
+
+const achievements = [
+	"Secured 5⭐ in Problem Solving as well as in Java Section and 4⭐ in SQL Section on HackerRank.",
+	"Semifinalist in Texas Instruments India Innovation Challenge Design Contest 2019.",
+	"Participated in several Beach-Cleanup Drives.",
+	"Volunteered for teaching underprivileged students at an NGO",
+];
 export {
 	greeting,
 	aboutMe,
@@ -444,4 +456,5 @@ export {
 	education,
 	certifications,
 	projects,
+	achievements,
 };

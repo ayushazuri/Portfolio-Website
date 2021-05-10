@@ -10,12 +10,15 @@ import { skills } from "../../portfolio";
 const Proficiency = () => {
 	const theme = useContext(ThemeContext);
 	return (
-		<Fade duration={2000} bottom>
-			<div className="proficiency">
+		<div className="proficiency">
+			<Fade duration={1000} top>
 				<h5>Proficiency</h5>
-				<div className="proficiency__container">
-					{skills?.proficiency?.map((skill, index) => {
-						return (
+			</Fade>
+
+			<div className="proficiency__container">
+				{skills?.proficiency?.map((skill, index) => {
+					return (
+						<Fade duration={1000} bottom>
 							<div key={index} className="proficiency__progressDiv">
 								<p>{skill.skills}</p>
 								<ProgressBar
@@ -23,11 +26,11 @@ const Proficiency = () => {
 									progress={skill.proficiency}
 								/>
 							</div>
-						);
-					})}
-				</div>
+						</Fade>
+					);
+				})}
 			</div>
-		</Fade>
+		</div>
 	);
 };
 

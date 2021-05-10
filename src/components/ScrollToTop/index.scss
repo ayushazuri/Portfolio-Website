@@ -6,4 +6,8 @@
     padding: 10px;
     border-radius: 15px;
     color: white;
+    @media (min-width: 1500px){
+        bottom: 2em;
+        right: 3em;
+    }
 }

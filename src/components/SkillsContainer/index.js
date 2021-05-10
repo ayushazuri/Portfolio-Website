@@ -25,7 +25,6 @@ import React from "react";
 import { RiGatsbyLine } from "react-icons/ri";
 import SkillImg from "./SkillImg";
 import ThemeContext from "../../theme";
-import Tooltip from "@material-ui/core/Tooltip";
 import { skills } from "../../portfolio";
 
 const getSkillLogo = (skill) => {
@@ -92,25 +91,15 @@ const SkillsContainer = () => {
 					<div className="skill__container">
 						{skills?.skills?.map((skill, index) => {
 							return (
-								<Tooltip
-									title={skill.name}
-									key={index}
-									arrow
-									enterDelay={250}
-									leaveDelay={300}
-									placement="top"
-								>
-									<div className="skill__logos">
-										<span className="skill__logo">{getSkillLogo(skill)}</span>
-										<small>{skill.name}</small>
-									</div>
-								</Tooltip>
+								<div className="skill__logos">
+									<span className="skill__logo">{getSkillLogo(skill)}</span>
+									<small>{skill.name}</small>
+								</div>
 							);
 						})}
 					</div>
 				</div>
 			</Fade>
-			;
 		</div>
 	);
 };
