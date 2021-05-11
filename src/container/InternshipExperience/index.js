@@ -4,9 +4,14 @@ import { Fade, Slide } from "react-reveal";
 
 import ExperienceCard from "../../components/ExperienceCard";
 import React from "react";
+import ViewMore from "../../components/ViewMore";
 import { experience } from "../../portfolio";
 
-const InternshipExperience = () => {
+const InternshipExperience = ({ isHome }) => {
+	React.useEffect(() => {
+		!isHome && window.scrollTo(0, 0);
+	}, [isHome]);
+
 	return (
 		<div className="internship">
 			<Fade duration={2000} top>
@@ -22,6 +27,7 @@ const InternshipExperience = () => {
 					);
 				})}
 			</div>
+			{isHome && <ViewMore to="experience" />}
 		</div>
 	);
 };

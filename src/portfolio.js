@@ -8,7 +8,7 @@ const aboutMe = {
 	resumeLink:
 		"https://drive.google.com/file/d/1XjFLW-pYzVrkwhvsoELtodBwQuG4bAkc/view?usp=sharing",
 	openForOpportunity: "Yes",
-	message: "My inbox is open for all. Feel free to contact any time.",
+	message: "My inbox is open for all. Feel free to contact me any time.",
 	portfolio_repository: "https://github.com/ayushazuri/Portfolio-Website",
 	linkedin: "https://www.linkedin.com/in/ayush-singh1998/",
 	githubLink: "https://github.com/ayushazuri",
@@ -17,6 +17,7 @@ const aboutMe = {
 
 const greeting = {
 	title: "Ayush Singh",
+	profilePhoto: require("./assets/Images/profile.jpeg").default,
 	logo_name: "AyushSingh",
 	subTitle:
 		"An Engineering graduate with a keen passion for Software Development to leverage my skills in Web Development, Java, Data Structures, Algorithms and SQL. Having good Programming and Problem-Solving Skills. Willing to learn new technologies with a receptive mind and diligence.",
@@ -148,9 +149,9 @@ const skills = {
 				color: "#339933",
 			},
 		},
-		{
-			name: "express.js",
-		},
+		// {
+		// 	name: "express.js",
+		// },
 		{
 			name: "npm",
 			style: {
@@ -211,11 +212,7 @@ const skills = {
 			proficiency: "60%",
 		},
 		{
-			skills: "NodeJS | ExpressJS",
-			proficiency: "50%",
-		},
-		{
-			skills: "Python | Firebase",
+			skills: "Python | Firebase | Node.js",
 			proficiency: "50%",
 		},
 		{
@@ -340,6 +337,7 @@ const certifications = [
 ];
 
 const projects = {
+	limit: "6",
 	description:
 		"My projects makes use of vast variety of latest technology tools. My best experience is to create Web Development projects using ReactJS or other Technologies",
 	projects: [

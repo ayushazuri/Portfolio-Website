@@ -3,9 +3,14 @@ import "./index.scss";
 import DegreeCard from "../../components/DegreeCard";
 import { Fade } from "react-reveal";
 import React from "react";
+import ViewMore from "../../components/ViewMore";
 import { education } from "../../portfolio";
 
-const Degrees = () => {
+const Degrees = ({ isHome }) => {
+	React.useEffect(() => {
+		!isHome && window.scrollTo(0, 0);
+	}, [isHome]);
+
 	return (
 		<div className="degree">
 			<Fade duration={2000} top>
@@ -21,6 +26,7 @@ const Degrees = () => {
 					);
 				})}
 			</div>
+			{isHome && <ViewMore to="education" />}
 		</div>
 	);
 };

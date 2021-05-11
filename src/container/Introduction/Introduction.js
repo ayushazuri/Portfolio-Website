@@ -12,15 +12,21 @@ import ThemeContext from "../../theme.js";
 import { greeting } from "../../portfolio";
 
 const Introduction = () => {
-	const { title, subTitle, resumeLink } = greeting;
-	const Theme = useContext(ThemeContext);
+	const { title, subTitle, resumeLink, profilePhoto } = greeting;
+	const theme = useContext(ThemeContext);
 	return (
 		<Fade bottom duration={2000}>
 			<div className="introduction">
 				<div className="introduction__text">
+					<div className="introduction__image">
+						<img
+							src={profilePhoto}
+							alt=""
+							style={{ border: `9px solid ${theme.text}` }}
+						/>
+					</div>
 					<h1>{title}</h1>
-
-					<p style={{ color: Theme.secondaryText }}>{subTitle}</p>
+					<p style={{ color: theme.secondaryText }}>{subTitle}</p>
 					<SocialMedia />
 					<div className="buttons">
 						<Link to="/about">

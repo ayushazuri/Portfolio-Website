@@ -25,6 +25,7 @@ import React from "react";
 import { RiGatsbyLine } from "react-icons/ri";
 import SkillImg from "./SkillImg";
 import ThemeContext from "../../theme";
+import ViewMore from "../ViewMore";
 import { skills } from "../../portfolio";
 
 const getSkillLogo = (skill) => {
@@ -75,8 +76,12 @@ const getSkillLogo = (skill) => {
 };
 
 <Fade duration={2000}></Fade>;
-const SkillsContainer = () => {
+const SkillsContainer = ({ isHome }) => {
 	const theme = React.useContext(ThemeContext);
+
+	React.useEffect(() => {
+		!isHome && window.scrollTo(0, 0);
+	}, [isHome]);
 
 	return (
 		<div className="skill">
@@ -98,6 +103,7 @@ const SkillsContainer = () => {
 							);
 						})}
 					</div>
+					{isHome && <ViewMore to="skills" />}
 				</div>
 			</Fade>
 		</div>

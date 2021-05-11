@@ -7,6 +7,9 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const AboutMe = () => {
 	const isAboutPage = false;
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div
 			style={{

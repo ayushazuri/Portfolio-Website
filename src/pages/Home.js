@@ -13,12 +13,12 @@ const Home = () => {
 	return (
 		<div>
 			<Layout>
-				<Introduction />
+				<Introduction isHome={isHome}/>
 				<Profession />
-				<SkillsContainer />
-				<InternshipExperience />
-				{/* <Project isHome={isHome} /> */}
-				<Degrees />
+				<SkillsContainer isHome={isHome} />
+				<InternshipExperience isHome={isHome} />
+				<Project isHome={isHome} limit={6} />
+				<Degrees isHome={isHome} />
 				<ScrollToTop />
 			</Layout>
 		</div>

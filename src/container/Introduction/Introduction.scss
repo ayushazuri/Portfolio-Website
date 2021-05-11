@@ -43,11 +43,24 @@
         @media (max-width: 800px){
             margin-bottom: 40px;
         }
-        // .buttons{
-        //     display: flex;
-        //     justify-content: space-around;
-        //     flex-wrap: wrap;
-        // }
+
+        .introduction__image{
+            display: none;
+            margin: 10px 0; 
+            @media(max-width: 500px){
+                display: block;
+            }
+            & > *{
+            // width: 300px;
+            border-radius: 50%;
+            object-fit: contain;
+            box-shadow: 0 30px 30px -30px #000;
+            transition: all .3s ease-out;
+            &:hover{
+                box-shadow: none;
+            }
+        }
+        }
     }
     &__img{
         display: flex;

@@ -1,0 +1,10 @@
+.view{
+    margin-top: 20px;
+    align-self: flex-end;
+    &__link{
+        text-decoration:underline;
+        text-decoration-style: dashed;
+        text-underline-position: under;
+        font-style: italic;
+    }
+}
