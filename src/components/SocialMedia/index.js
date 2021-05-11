@@ -1,3 +1,5 @@
+import "./index.scss";
+
 import {
 	AiFillGithub,
 	AiFillInstagram,
@@ -15,7 +17,7 @@ import styled from "styled-components";
 const IconWrapper = styled.span`
 	&:hover > * {
 		background-color: #000 !important;
-		transition: 0.4s ease-in;
+		transition: 0.3s ease-in;
 	}
 `;
 const SocialMedia = () => {
@@ -44,6 +46,7 @@ const SocialMedia = () => {
 			return <AiOutlineGoogle size={size} style={style} />;
 		if (media.name === "Telephone") return <MdCall size={size} style={style} />;
 	};
+
 	return (
 		<div className="socialmedia">
 			{socialMediaLinks?.map((media, index) => {

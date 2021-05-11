@@ -17,7 +17,7 @@ const Home = () => {
 				<Profession />
 				<SkillsContainer />
 				<InternshipExperience />
-				<Project isHome={isHome} />
+				{/* <Project isHome={isHome} /> */}
 				<Degrees />
 				<ScrollToTop />
 			</Layout>

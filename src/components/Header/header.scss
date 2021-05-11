@@ -7,7 +7,7 @@
     justify-content: flex-end;
     font-weight: 500;
     margin: 20px;
-    p{
+    .header__nav{
         padding: 10px 20px;
         margin-top: 0;
         font-size: 16px;
@@ -26,7 +26,6 @@
 .header{
     display: flex;
     justify-content: space-between;
-    // width: 100vw;  
 
     @media (max-width: 450px){
         width: auto;
@@ -37,8 +36,13 @@
         align-items: center;
         justify-content: center;
         margin-left: 40px;
+        margin-top: 1px;
         text-align: center;
        float: left;
+       @media (max-width: 800px){
+           margin-left: 25px;
+           font-size: 30px;
+       }
     }
 }
 .header__mobile{
@@ -58,11 +62,14 @@
         margin-top: 10px;
         margin-bottom: 0;
         padding: 0 30px;
-        p{
+        .header__nav{
             margin: 0;
+            display: block;
             font-weight: 500;
             padding: 10px 20px;
             font-size: 16px;
+            
         }
+        // border-bottom: 1px solid #d9dbdf;
     }
 }

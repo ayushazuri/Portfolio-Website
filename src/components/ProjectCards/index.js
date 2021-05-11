@@ -20,10 +20,7 @@ const ProjectCards = ({ project }) => {
 	const theme = React.useContext(ThemeContext);
 
 	return (
-		<Card
-			className="projectcard"
-			style={{ color: theme.text, backgroundColor: theme.body }}
-		>
+		<Card className="projectcard" style={{ color: theme.text }}>
 			<div className="projectCard">
 				<div className="projectcard__front">
 					<img src={image} alt="" />

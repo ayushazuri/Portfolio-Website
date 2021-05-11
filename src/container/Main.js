@@ -18,6 +18,7 @@ const Main = () => {
 					<Route exact path="/projects" render={() => <Projects />} />
 					<Route exact path="/education" render={() => <Education />} />
 					<Route exact path="/about" render={() => <AboutMe />} />
+					<Route exact path="/home" render={() => <Home />} />
 					<Route exact path="/" render={() => <Home />} />
 				</Switch>
 			</Router>

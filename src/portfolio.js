@@ -8,7 +8,7 @@ const aboutMe = {
 	resumeLink:
 		"https://drive.google.com/file/d/1XjFLW-pYzVrkwhvsoELtodBwQuG4bAkc/view?usp=sharing",
 	openForOpportunity: "Yes",
-	message: "My inbox is open for all. Contact me any time.",
+	message: "My inbox is open for all. Feel free to contact any time.",
 	portfolio_repository: "https://github.com/ayushazuri/Portfolio-Website",
 	linkedin: "https://www.linkedin.com/in/ayush-singh1998/",
 	githubLink: "https://github.com/ayushazuri",
@@ -351,6 +351,7 @@ const projects = {
 			websiteLink: "www.ayushazuri.com",
 			description:
 				"This is my portfolio website which you are looking at. I have made this website from scratch by using ReactJS.",
+			timeline: "May 2021",
 		},
 		{
 			name: "Amazon Clone",
@@ -367,6 +368,7 @@ const projects = {
 			websiteLink: "https://clone-d2903.web.app",
 			description:
 				"Amazon Website Cloned using ReactJS and Firebase. Authentication, Database, and Deployement has been done with the help of Firebase. Functionalities like, Logging in via your account, Adding you desired items to the cart and buying it, etc are added in this cloned version of Amazon.",
+			timeline: "April 2021",
 		},
 		{
 			name: "Netflix Clone",
@@ -383,6 +385,7 @@ const projects = {
 			websiteLink: "https://netflix-clone-25d79.web.app/",
 			description:
 				"Cloned Netflix Website using ReactJS and CSS, and used TMDB API for movie database, then deployed the website on Firebase",
+			timeline: "March 2021",
 		},
 		{
 			name: "Zoom Clone",
@@ -400,6 +403,7 @@ const projects = {
 			websiteLink: "",
 			description:
 				"A Node.js project, made with the help of various other technologies like express.js, socket.io, ejs, and peerjs.",
+			timeline: "Arpil 2021",
 		},
 		{
 			name: "REWFA Website",
@@ -409,6 +413,7 @@ const projects = {
 			websiteLink: "https://rewfa.com/",
 			description:
 				"Built this fully responsive website of the E-Commerce Startup catering to various business needs from scratch using ReactJS.",
+			timeline: "Dec 2020 - Feb 2021",
 		},
 		{
 			name: "Hotel Management System",
@@ -418,6 +423,7 @@ const projects = {
 			websiteLink: "",
 			description:
 				"A Java-based application for managing daily operations of a Hotel such as booking rooms, maintaining customer details, ordering food, and generating invoices. The app incorporates several concepts of Object- Oriented Programming and Exception Handling.",
+			timeline: "April 2020",
 		},
 		{
 			name: "Food Recommendation System",
@@ -427,6 +433,7 @@ const projects = {
 			websiteLink: "",
 			description:
 				"A System which predicts various dishes according to the user's past ordering history. It also predicts the best 3 restaurants (based on the restaurants' rating) where the user can find the predicted dish",
+			timeline: "August 2020",
 		},
 		{
 			name: "Pharmacy Management System",
@@ -436,6 +443,7 @@ const projects = {
 			websiteLink: "",
 			description:
 				"A User Friendly Java application interfaced with MySQL database using JDBC connectivity to efficiently perform various tasks for a pharmacy company.",
+			timeline: "August 2020",
 		},
 	],
 };

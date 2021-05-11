@@ -8,6 +8,9 @@
     h1{
         font-weight: 500;
         font-size: 45px;
+        @media (max-width: 900px){
+            font-size: 40px;
+        }
     }
     &__cards{
         display: flex;

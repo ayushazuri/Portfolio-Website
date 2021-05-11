@@ -6,76 +6,82 @@ const HeaderList = ({ theme, onMouseEnter, onMouseOut }) => {
 	return (
 		<>
 			<li>
-				<p
-					to="/"
-					// tag={Link}
+				<NavLink
+					to="/home"
+					tag={Link}
 					activeStyle={{ fontWeight: "bold" }}
 					style={{ color: theme.text }}
 					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
 					onMouseOut={(event) => onMouseOut(event)}
+					className="header__nav"
 				>
 					Home
-				</p>
+				</NavLink>
 			</li>
 			<li>
-				<p
+				<NavLink
 					to="/skills"
 					tag={Link}
 					activeStyle={{ fontWeight: "bold" }}
 					style={{ color: theme.text }}
 					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
 					onMouseOut={(event) => onMouseOut(event)}
+					className="header__nav"
 				>
 					Skills
-				</p>
+				</NavLink>
 			</li>
 			<li>
-				<p
+				<NavLink
 					to="/experience"
 					tag={Link}
 					activeStyle={{ fontWeight: "bold" }}
 					style={{ color: theme.text }}
 					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
 					onMouseOut={(event) => onMouseOut(event)}
+					className="header__nav"
 				>
 					Experience
-				</p>
+				</NavLink>
 			</li>
 			<li>
-				<p
+				<NavLink
 					to="/projects"
 					tag={Link}
 					activeStyle={{ fontWeight: "bold" }}
 					style={{ color: theme.text }}
 					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
 					onMouseOut={(event) => onMouseOut(event)}
+					className="header__nav"
 				>
 					Projects
-				</p>
+				</NavLink>
 			</li>
 			<li>
-				<p
+				<NavLink
 					to="/education"
 					tag={Link}
 					activeStyle={{ fontWeight: "bold" }}
 					style={{ color: theme.text }}
 					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
 					onMouseOut={(event) => onMouseOut(event)}
+					className="header__nav"
 				>
 					Education
-				</p>
+				</NavLink>
 			</li>
 			<li>
-				<p
+				<NavLink
 					to="/about"
 					tag={Link}
 					activeStyle={{ fontWeight: "bold" }}
 					style={{ color: theme.text }}
 					onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
 					onMouseOut={(event) => onMouseOut(event)}
+					className="header__nav"
 				>
 					About me
-				</p>
+				</NavLink>
 			</li>
 		</>
 	);
