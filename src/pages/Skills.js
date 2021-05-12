@@ -7,7 +7,7 @@ import SkillsContainer from "../components/SkillsContainer";
 
 const Skills = () => {
 	return (
-		<Layout>
+		<Layout page="Skills">
 			<Profession />
 			<SkillsContainer />
 			<Proficiency />

@@ -11,13 +11,13 @@ const ExperienceIntro = () => {
 
 	return (
 		<div className="experience">
-			<Fade duration={2000} left>
-				<div className="experience__left">
+			<Fade duration={2500} left distance="200px">
+				<div className="experience__left" data-aos="fade-right" data-aos-once>
 					<ExperienceImg theme={theme} />
 				</div>
 			</Fade>
-			<Fade duration={2000} right>
-				<div className="experience__right">
+			<Fade duration={2500} right distance="200px">
+				<div className="experience__right" data-aos="fade-left" data-aos-once>
 					<h1>Experience</h1>
 					<div className="experience__description">
 						{experience?.descriptions?.map((description, index) => {

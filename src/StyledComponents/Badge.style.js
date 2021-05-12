@@ -6,6 +6,7 @@ const Badge = styled.span`
 	background-color: ${Theme.headerColor};
 	font-size: 14px;
 	padding: 2px 10px;
+	cursor: pointer;
 	border-radius: 13px;
 `;
 

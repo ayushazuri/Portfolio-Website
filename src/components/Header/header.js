@@ -1,5 +1,6 @@
 import "./Header.scss";
 
+import { Bounce, Flip, LightSpeed, Rotate, Slide, Zoom } from "react-reveal";
 import React, { useContext, useEffect, useState } from "react";
 
 import { AiOutlineClose } from "react-icons/ai";
@@ -9,7 +10,7 @@ import { Link } from "react-router-dom";
 import OutsideClickClose from "../OutsideClickClose/OutsideClickClose";
 import ThemeContext from "../../theme";
 
-const Header = ({ isAboutPage }) => {
+const Header = () => {
 	const theme = useContext(ThemeContext);
 	const [open, setOpen] = useState(false); //For hamburger
 	const [size, setSize] = useState(window.innerWidth); //For responding to the size change (Media Query)
@@ -41,16 +42,9 @@ const Header = ({ isAboutPage }) => {
 		}
 	};
 
-	const styleForAboutPage = {
-		width: "100vw",
-	};
-
 	return (
 		<OutsideClickClose setOpen={setOpen}>
-			<header
-				style={isAboutPage ? styleForAboutPage : {}}
-				className={!open ? "header" : "header__mobile"}
-			>
+			<header className={!open ? "header" : "header__mobile"}>
 				{!open && (
 					<Link to="/home">
 						<h1 to={Link} tag={Link} className="header__logo">
@@ -82,7 +76,7 @@ const Header = ({ isAboutPage }) => {
 					</ul>
 				) : (
 					<div className="header__menu_hamburger">
-						<div>
+						<div className="header__hamLogo">
 							{open === false ? (
 								<GiHamburgerMenu
 									className="hamburger"
@@ -90,23 +84,28 @@ const Header = ({ isAboutPage }) => {
 									onClick={handleOpen}
 								/>
 							) : (
-								<AiOutlineClose
-									className="hamburger"
-									size={30}
-									onClick={handleOpen}
-								/>
+								<Bounce left delay={500}>
+									<AiOutlineClose
+										className="hamburger"
+										size={30}
+										onClick={handleOpen}
+									/>
+								</Bounce>
 							)}
 						</div>
+
 						{open === true ? (
 							<ul
 								className="header__menu_mobile"
 								style={{ backgroundColor: theme.body }}
 							>
-								<HeaderList
-									theme={theme}
-									onMouseEnter={onMouseEnter}
-									onMouseOut={onMouseOut}
-								/>
+								<Slide top>
+									<HeaderList
+										theme={theme}
+										onMouseEnter={onMouseEnter}
+										onMouseOut={onMouseOut}
+									/>
+								</Slide>
 							</ul>
 						) : (
 							""

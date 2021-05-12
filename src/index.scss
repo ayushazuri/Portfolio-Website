@@ -8,9 +8,9 @@
 		url("./assets/fonts/Agustina.woff") format("woff");
 }
 @font-face {
-	font-family: "Google Sans Bold";
-	src: local("Google Sans Bold"),
-		url("./assets/fonts/GoogleSans-Bold.ttf") format("ttf");
+  font-family: "Baloo Bhai";
+  src: local("Baloo Bhai"),
+    url("./assets/fonts/BalooBhai2-Regular.ttf") format("ttf");
 }
 
 html,
@@ -40,7 +40,10 @@ body {
     //     {
     //         background-color: #a5a6a8;
     //     }
+
+	overflow-x: hidden;
 }
+
 /* Media Query */
 @media (max-width: 1380px) {
 	html,
@@ -49,3 +52,4 @@ body {
 		line-height: normal;
 	}
 }
+

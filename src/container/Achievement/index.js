@@ -10,18 +10,22 @@ const Achievements = () => {
 	const theme = React.useContext(ThemeContext);
 
 	return (
-		<div className="achievement">
-			<Fade duration={2000} left>
-				<div className="achievement__left">
+		<div className="achievement" distance="200px">
+			<Fade duration={2500} left>
+				<div className="achievement__left" data-aos="zoom-in-up" data-aos-once>
 					<AchievementImg theme={theme} />
 				</div>
 			</Fade>
-			<Fade duration={2000} right>
-				<div className="achievement__right">
+			<Fade duration={2500} right distance="200px">
+				<div
+					className="achievement__right"
+					data-aos="zoom-in-down"
+					data-aos-once
+				>
 					<h1>Achievements and Extra Curriculars</h1>
 					<ul>
 						{achievements.map((achievement, index) => {
-							return <li>{achievement}</li>;
+							return <li key={index}>{achievement}</li>;
 						})}
 					</ul>
 				</div>

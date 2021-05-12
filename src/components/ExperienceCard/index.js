@@ -21,7 +21,12 @@ const ExperienceCard = ({ internship }) => {
 	const theme = React.useContext(ThemeContext);
 
 	return (
-		<Card className="card" style={{ color: theme.text }}>
+		<Card
+			className="card"
+			style={{ color: theme.text }}
+			data-aos="fade-up"
+			data-aos-once
+		>
 			<div
 				className="card__details"
 				style={{ backgroundColor: theme.headerColor }}

@@ -74,7 +74,10 @@
             flex-wrap: wrap
         }
 
-        .contact__buttons{
+        #contact__button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             & > *{
                 margin: 0 5px;

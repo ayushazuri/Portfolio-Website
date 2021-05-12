@@ -2,6 +2,7 @@ import Achievements from "../container/Achievement";
 import Contact from "../container/Contact";
 import Footer from "../container/Footer";
 import Header from "../components/Header/Header";
+import { Helmet } from "react-helmet";
 import React from "react";
 import ScrollToTop from "../components/ScrollToTop";
 
@@ -19,6 +20,20 @@ const AboutMe = () => {
 				justifyContent: "space-between",
 			}}
 		>
+			<Helmet>
+				<title>{`Ayush's Portfolio | About`}</title>
+				<html lang="en" />
+				<meta name="description" content="Portfolio Website"></meta>
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1.0"
+				></meta>
+				<meta name="author" content="Ayush Singh"></meta>
+				<meta
+					name="keywords"
+					content="Portfolio, Ayush Singh, ReactJs, SASS, Javascript"
+				></meta>
+			</Helmet>
 			<Header isAboutPage={isAboutPage} />
 			<Contact />
 			<Achievements />

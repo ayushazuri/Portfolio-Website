@@ -13,8 +13,10 @@ const Degrees = ({ isHome }) => {
 
 	return (
 		<div className="degree">
-			<Fade duration={2000} top>
-				<h1>Degrees</h1>
+			<Fade duration={2000} top distance="100px">
+				<h1 data-aos="fade-down" data-aos-once>
+					Degrees
+				</h1>
 			</Fade>
 
 			<div className="degree__cards">

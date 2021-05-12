@@ -18,7 +18,6 @@ const ProjectCards = ({ project }) => {
 	} = project;
 
 	const theme = React.useContext(ThemeContext);
-
 	return (
 		<Card className="projectcard" style={{ color: theme.text }}>
 			<div className="projectCard">
@@ -54,7 +53,6 @@ const ProjectCards = ({ project }) => {
 						{websiteLink ? (
 							<a href={websiteLink} target="_blank" rel="noopener noreferrer">
 								<Button>
-									<AiFillGithub />
 									<p>Visit Website</p>
 								</Button>
 							</a>
@@ -65,7 +63,6 @@ const ProjectCards = ({ project }) => {
 				</div>
 			</div>
 		</Card>
-		// </Slide>
 	);
 };
 

@@ -5,7 +5,6 @@ import React, { useContext } from "react";
 import Button from "../../StyledComponents/button.style.js";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
-import Jump from "react-reveal/Jump";
 import { Link } from "react-router-dom";
 import SocialMedia from "../../components/SocialMedia/";
 import ThemeContext from "../../theme.js";
@@ -15,8 +14,8 @@ const Introduction = () => {
 	const { title, subTitle, resumeLink, profilePhoto } = greeting;
 	const theme = useContext(ThemeContext);
 	return (
-		<Fade bottom duration={2000}>
-			<div className="introduction">
+		<Fade duration={2000} bottom>
+			<div className="introduction" data-aos="fade-up" data-aos-once>
 				<div className="introduction__text">
 					<div className="introduction__image">
 						<img

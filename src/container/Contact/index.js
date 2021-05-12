@@ -29,18 +29,18 @@ const Contact = ({ isFooter }) => {
 
 	const theme = React.useContext(ThemeContext);
 	return (
-		<div className="contact">
-			<Fade duration={2000} left>
-				<div className="contact__image">
+		<Fade duration={2000} bottom>
+			<div className="contact">
+				<div className="contact__image" data-aos="zoom-in" data-aos-once>
 					<img
 						src={profilePhoto}
 						alt=""
 						style={{ border: `9px solid ${theme.text}` }}
 					/>
 				</div>
-			</Fade>
-			<Fade duration={2000} right>
-				<div className="contact__details">
+				{/* </Fade> */}
+				{/* <Fade duration={2500} right distance="200px"> */}
+				<div className="contact__details" data-aos="zoom-in" data-aos-once>
 					<h1>Contact Me!</h1>
 					<p>{message}</p>
 					<div className="contact__contact">
@@ -78,15 +78,15 @@ const Contact = ({ isFooter }) => {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<Button className="contact__button">
+								<Button id="contact__button">
 									<AiFillGithub /> <span>Source Code</span>
 								</Button>
 							</a>
 						</div>
 					)}
 				</div>
-			</Fade>
-		</div>
+			</div>
+		</Fade>
 	);
 };
 

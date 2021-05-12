@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
 	return (
 		<div>
-			<Fade duration={2000} bottom>
+			<Fade bottom>
 				<div
 					className="footer"
 					style={{

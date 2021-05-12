@@ -11,12 +11,12 @@ const Profession = () => {
 	const theme = useContext(ThemeContext);
 	return (
 		<div className="profession">
-			<Fade duration={2000} left>
+			<Fade duration={2500} left distance="200px">
 				<div className="profession__left">
 					<FullStackImg theme={theme} />
 				</div>
 			</Fade>
-			<Fade duration={2000} right>
+			<Fade duration={2500} right distance="200px">
 				<div className="profession__right">
 					<h1 className="profession__heading">What I DO?</h1>
 

@@ -6,7 +6,7 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const Experience = () => {
 	return (
-		<Layout>
+		<Layout page="Experience">
 			<ExperienceIntro />
 			<InternshipExperience />
 			<ScrollToTop />

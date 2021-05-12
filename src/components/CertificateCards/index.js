@@ -14,6 +14,8 @@ const CertificateCard = ({ certificate }) => {
 			target="_blank"
 			rel="noopener noreferrer"
 			style={{ textDecoration: "none" }}
+			data-aos="fade-up"
+			data-aos-once
 		>
 			<Tooltip
 				title={"View Certificate"}

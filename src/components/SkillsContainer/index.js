@@ -75,7 +75,6 @@ const getSkillLogo = (skill) => {
 		return <SiMaterialUi size={size} style={style} />;
 };
 
-<Fade duration={2000}></Fade>;
 const SkillsContainer = ({ isHome }) => {
 	const theme = React.useContext(ThemeContext);
 
@@ -85,18 +84,18 @@ const SkillsContainer = ({ isHome }) => {
 
 	return (
 		<div className="skill">
-			<Fade duration={2000} left>
-				<div className="skill__left">
+			<Fade duration={2500} left distance="150px">
+				<div className="skill__left" data-aos="fade-right" data-aos-once>
 					<SkillImg theme={theme} />
 				</div>
 			</Fade>
-			<Fade duration={2000} right>
-				<div className="skill__right">
+			<Fade duration={2500} right distance="150px">
+				<div className="skill__right" data-aos="fade-left" data-aos-once>
 					<h5>Skills</h5>
 					<div className="skill__container">
 						{skills?.skills?.map((skill, index) => {
 							return (
-								<div className="skill__logos">
+								<div className="skill__logos" key={index}>
 									<span className="skill__logo">{getSkillLogo(skill)}</span>
 									<small>{skill.name}</small>
 								</div>

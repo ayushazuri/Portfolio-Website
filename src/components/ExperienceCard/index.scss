@@ -12,8 +12,9 @@
     border: 1px solid #d9dbdf;
     box-shadow: 5px 5px 5px #d9dbdf !important;
     flex: 1 1;
+    cursor: pointer;
     &:hover{
-        transform: scale(1.01);
+        transform: scale(1.02);
        transition: transform 0.3s ease-in-out;
     }
     &__details{

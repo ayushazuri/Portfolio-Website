@@ -9,7 +9,12 @@ const DegreeCard = ({ degree }) => {
 	const theme = React.useContext(ThemeContext);
 
 	return (
-		<Card className="degreeCard" style={{ color: theme.text }}>
+		<Card
+			className="degreeCard"
+			style={{ color: theme.text }}
+			data-aos="fade-up"
+			data-aos-once
+		>
 			<div
 				className="degreeCard__logo"
 				style={{ backgroundColor: theme.headerColor }}

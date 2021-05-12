@@ -7,7 +7,7 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const Education = () => {
 	return (
-		<Layout>
+		<Layout page="Education">
 			<EducationIntro />
 			<Degrees />
 			<Certification />

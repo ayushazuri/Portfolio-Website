@@ -6,7 +6,7 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const Projects = () => {
 	return (
-		<Layout>
+		<Layout page="Projects">
 			<ProjectIntro />
 			<Project />
 			<ScrollToTop />

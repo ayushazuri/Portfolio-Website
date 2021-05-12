@@ -11,15 +11,21 @@ const Proficiency = () => {
 	const theme = useContext(ThemeContext);
 	return (
 		<div className="proficiency">
-			<Fade duration={1000} top>
-				<h5>Proficiency</h5>
+			<Fade duration={2500} top distance="100px">
+				<h5 data-aos="fade-down" data-aos-once>
+					Proficiency
+				</h5>
 			</Fade>
-
 			<div className="proficiency__container">
 				{skills?.proficiency?.map((skill, index) => {
 					return (
-						<Fade duration={1000} bottom>
-							<div key={index} className="proficiency__progressDiv">
+						<Fade duration={2500} bottom distance="200px">
+							<div
+								key={index}
+								className="proficiency__progressDiv"
+								data-aos="fade-up"
+								data-aos-once
+							>
 								<p>{skill.skills}</p>
 								<ProgressBar
 									bgColor={theme.text}
