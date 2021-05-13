@@ -17,8 +17,8 @@ const Certification = () => {
 			<div className="certification__cards">
 				{certifications.map((certificate, index) => {
 					return (
-						<Fade duration={2000} bottom>
-							<CertificateCard key={index} certificate={certificate} />
+						<Fade duration={2000} bottom key={index}>
+							<CertificateCard certificate={certificate} />
 						</Fade>
 					);
 				})}

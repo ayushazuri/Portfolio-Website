@@ -22,8 +22,8 @@ const Degrees = ({ isHome }) => {
 			<div className="degree__cards">
 				{education.map((degree, index) => {
 					return (
-						<Fade duration={2000} bottom>
-							<DegreeCard key={index} degree={degree} />
+						<Fade key={index} duration={2000} bottom>
+							<DegreeCard degree={degree} />
 						</Fade>
 					);
 				})}

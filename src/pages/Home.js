@@ -1,5 +1,4 @@
 import Degrees from "../container/Degrees";
-import { Helmet } from "react-helmet";
 import InternshipExperience from "../container/InternshipExperience";
 import Introduction from "../container/Introduction/Introduction";
 import Layout from "../Layout/Layout";

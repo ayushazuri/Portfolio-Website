@@ -25,17 +25,9 @@ const ProgressBar = ({ bgColor, progress }) => {
 		transition: all 10s ease-in-out;
 	`;
 
-	const ProgressLabel = styled.span`
-		/* padding: 5;
-		color: white;
-		/* font-weight: bold; */
-	`;
-
 	return (
 		<ProgressContainer>
-			<ProgressFiller>
-				{/* <ProgressLabel>{progress}</ProgressLabel> */}
-			</ProgressFiller>
+			<ProgressFiller></ProgressFiller>
 		</ProgressContainer>
 	);
 };

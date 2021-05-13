@@ -6,7 +6,7 @@ import ThemeContext from "../../theme";
 import Tooltip from "@material-ui/core/Tooltip";
 
 const CertificateCard = ({ certificate }) => {
-	const { name, author, source, link, image } = certificate;
+	const { name, author, link, image } = certificate;
 	const theme = React.useContext(ThemeContext);
 	return (
 		<a

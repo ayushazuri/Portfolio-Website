@@ -22,7 +22,7 @@ const Project = ({ isHome }) => {
 					Projects
 				</h1>
 			</Fade>
-			<Fade duration={2000} fraction="0.1" bottom distance="200px">
+			<Fade duration={2000} fraction={0.1} bottom distance="200px">
 				<div className="project__cards">
 					{projects?.limit && isHome
 						? projects.projects

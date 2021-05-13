@@ -22,8 +22,8 @@ const InternshipExperience = ({ isHome }) => {
 			<div className="internship__cards">
 				{experience.internships?.map((internship, index) => {
 					return (
-						<Fade duration={2000} bottom>
-							<ExperienceCard internship={internship} key={index} />
+						<Fade duration={2000} bottom key={index}>
+							<ExperienceCard internship={internship} />
 						</Fade>
 					);
 				})}

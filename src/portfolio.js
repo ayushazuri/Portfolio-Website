@@ -1,29 +1,27 @@
-//Home Page
-
-const aboutMe = {
-	name: "Ayush Singh",
-	email: "ayushazuri@gmail.com",
-	phone: "+91 9892770647",
-	address: "F-1722, Maple Leaf, Raheja Vihar, Powai, Mumbai, 400072.",
-	resumeLink:
-		"https://drive.google.com/file/d/1XjFLW-pYzVrkwhvsoELtodBwQuG4bAkc/view?usp=sharing",
-	openForOpportunity: "Yes",
-	message: "My inbox is open for all. Feel free to contact me any time.",
-	portfolio_repository: "https://github.com/ayushazuri/Portfolio-Website",
-	linkedin: "https://www.linkedin.com/in/ayush-singh1998/",
-	githubLink: "https://github.com/ayushazuri",
-	profilePhoto: require("./assets/Images/profile.jpeg").default,
-};
-
 const greeting = {
 	title: "Ayush Singh",
 	profilePhoto: require("./assets/Images/profile.jpeg").default,
 	logo_name: "AyushSingh",
 	subTitle:
-		"An Engineering graduate with a keen passion for Software Development to leverage my skills in Web Development, Java, Data Structures, Algorithms and SQL. Having good Programming and Problem-Solving Skills. Willing to learn new technologies with a receptive mind and diligence.",
+		"A Passionate Software Developer having an experience of building web applications using various technologies alongwith good programming and Problem-Solving Skills. Interested to learn new technologies with a receptive mind and diligence.",
 	resumeLink:
 		"https://drive.google.com/file/d/1XjFLW-pYzVrkwhvsoELtodBwQuG4bAkc/view?usp=sharing",
 	portfolio_repository: `https://github.com/ayushazuri/Portfolio-Website`,
+};
+
+const aboutMe = {
+	name: "Ayush Singh",
+	email: "ayushazuri@gmail.com",
+	phone: "+91 9892770647",
+	address: "Maple Leaf, Raheja Vihar, Powai, Mumbai, 400072.",
+	resumeLink:
+		"https://drive.google.com/file/d/1XjFLW-pYzVrkwhvsoELtodBwQuG4bAkc/view?usp=sharing",
+	openForOpportunity: "Yes",
+	message: "My inbox is open for all. Feel free to reach out to me any time. ",
+	portfolio_repository: "https://github.com/ayushazuri/Portfolio-Website",
+	linkedin: "https://www.linkedin.com/in/ayush-singh1998/",
+	githubLink: "https://github.com/ayushazuri",
+	profilePhoto: require("./assets/Images/profile.jpeg").default,
 };
 
 const socialMediaLinks = [
@@ -73,19 +71,19 @@ const competitiveLinks = [
 	{
 		name: "GeeksForGeeks",
 		link: "https://auth.geeksforgeeks.org/user/ayushazuri/profile",
-		backgroundColor: "black",
+		backgroundColor: "#008001",
 	},
 	{
 		name: "Leetcode",
 		link: "https://leetcode.com/ayushazuri/",
-		backgroundColor: "#008001",
+		backgroundColor: "black",
 	},
 ];
 
 const skills = {
 	descriptions: [
-		"Web developer who loves to explore and try different tech stacks and use them to make highly interactive and responsive Front-end / User interface for every web application",
-		"Loves coding and programming and using my knowledge of Data Structures and Algorithms to solve different problems.",
+		"A Web Developer who makes highly interactive and responsive web applications using fascinating technologies.",
+		"Enthusiast programmer who loves to solve different problems with a result-oriented approach.",
 	],
 	skills: [
 		{
@@ -224,7 +222,7 @@ const skills = {
 
 const experience = {
 	descriptions: [
-		"I have worked for various startups as a Web Developer to use my skills for the company's growth and development. Because of this I have learnt alot as well and increased my knowledge and improved my skills ",
+		"I have taken up various assignments from different startups as a Web Developer and have used my skills for their growth and development. Those organizations provided me an opportunity to assimilate the technologies in the market and learn new skills.",
 	],
 	works: [{}],
 	internships: [
@@ -253,7 +251,7 @@ const experience = {
 			role: "Web Developer Intern",
 			image: require("./assets/Images/orcip_logo.png").default,
 			tasks: [
-				"Worked on companies website",
+				"Worked on company's website.",
 				"Worked on some open source projects like custom-react-select",
 			],
 			link: "https://orcip.com/",
@@ -313,13 +311,13 @@ const certifications = [
 		link: "https://coursera.org/share/b44da8f77e30687fd8a36167c9231f03",
 		image: require("./assets/Images/coursera.png").default,
 	},
-	{
-		name: "Data Structures & Algorithms!",
-		author: "DS Guy",
-		source: "Udemy",
-		link: "https://www.udemy.com/home/my-courses/learning/",
-		image: require("./assets/Images/udemy.png").default,
-	},
+	// {
+	// 	name: "Data Structures & Algorithms!",
+	// 	author: "DS Guy",
+	// 	source: "Udemy",
+	// 	link: "https://www.udemy.com/home/my-courses/learning/",
+	// 	image: require("./assets/Images/udemy.png").default,
+	// },
 	{
 		name: "Java (Basics)",
 		author: "HackerRank",
@@ -339,7 +337,7 @@ const certifications = [
 const projects = {
 	limit: "6",
 	description:
-		"My projects makes use of vast variety of latest technology tools. My best experience is to create Web Development projects using ReactJS or other Technologies",
+		"My projects utilize a variety of leading technological tools. One of my finest experiences include working on Web Development tasks using trending technologies such as ReactJS and SASS.",
 	projects: [
 		{
 			name: "Portfolio Website",
@@ -348,7 +346,7 @@ const projects = {
 			technologies: ["ReactJS", "Javascript", "SASS"],
 			websiteLink: "www.ayushazuri.com",
 			description:
-				"This is my portfolio website which you are looking at. I have made this website from scratch by using ReactJS.",
+				"A Portfolio Website to showcase my skills and my works as a Software Developer and which can give you a brief description of me. Made from scratch using ReactJs.",
 			timeline: "May 2021",
 		},
 		{

@@ -16,7 +16,6 @@ import { aboutMe } from "../../portfolio";
 
 const Contact = ({ isFooter }) => {
 	const {
-		name,
 		profilePhoto,
 		email,
 		phone,
@@ -79,7 +78,7 @@ const Contact = ({ isFooter }) => {
 								rel="noopener noreferrer"
 							>
 								<Button id="contact__button">
-									<AiFillGithub /> <span>Source Code</span>
+									<AiFillGithub className="contact__github"/> <span>Source Code</span>
 								</Button>
 							</a>
 						</div>
