@@ -3,9 +3,9 @@ const greeting = {
 	profilePhoto: require("./assets/Images/profile.jpeg").default,
 	logo_name: "AyushSingh",
 	subTitle:
-		"A Passionate Software Developer having an experience of building web applications using various technologies alongwith good programming and Problem-Solving Skills. Interested to learn new technologies with a receptive mind and diligence.",
+		"A Passionate Software Developer having an experience of building web applications using various technologies along with good programming and Problem-Solving Skills. Interested to learn new technologies with a receptive mind and diligence.",
 	resumeLink:
-		"https://drive.google.com/file/d/1XjFLW-pYzVrkwhvsoELtodBwQuG4bAkc/view?usp=sharing",
+		"https://drive.google.com/uc?id=1Y6wsRVOlDVclGhtwBPAEv1Oxp3z4ICeQ&export=download",
 	portfolio_repository: `https://github.com/ayushazuri/Portfolio-Website`,
 };
 
@@ -15,7 +15,7 @@ const aboutMe = {
 	phone: "+91 9892770647",
 	address: "Maple Leaf, Raheja Vihar, Powai, Mumbai, 400072.",
 	resumeLink:
-		"https://drive.google.com/file/d/1XjFLW-pYzVrkwhvsoELtodBwQuG4bAkc/view?usp=sharing",
+		"https://drive.google.com/uc?id=1Y6wsRVOlDVclGhtwBPAEv1Oxp3z4ICeQ&export=download",
 	openForOpportunity: "Yes",
 	message: "My inbox is open for all. Feel free to reach out to me any time. ",
 	portfolio_repository: "https://github.com/ayushazuri/Portfolio-Website",
