@@ -43,7 +43,7 @@ const ProjectCards = ({ project }) => {
 						{githubLink ? (
 							<a href={githubLink} target="_blank" rel="noopener noreferrer">
 								<Button>
-									<AiFillGithub />
+									<AiFillGithub className="button__logo" />
 									<p>Source Code</p>
 								</Button>
 							</a>

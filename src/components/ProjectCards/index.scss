@@ -107,6 +107,9 @@
             @media (max-width: 900px){
                 flex-wrap: wrap;
             }
+            .button__logo{
+                margin-right: 3px;
+            }
             a > *{
                 display: flex;
                 flex-direction: row;

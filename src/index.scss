@@ -23,24 +23,6 @@ body {
 	font-family: "Baloo Bhai 2", cursive;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	//  &::-webkit-scrollbar-track
-    //     {
-    //     -webkit-box-shadow: inset 0 0 6px #a5a6a8;
-    //         box-shadow: inset 0 0 6px #a5a6a8;
-    //         background-color: #F5F5F5;
-    //     }
-
-    //     &::-webkit-scrollbar
-    //     {
-    //         width: 12px;
-    //         background-color: #F5F5F5;
-    //     }
-
-    //     &::-webkit-scrollbar-thumb
-    //     {
-    //         background-color: #a5a6a8;
-    //     }
-
 	overflow-x: hidden;
 }
 
@@ -53,3 +35,8 @@ body {
 	}
 }
 
+// @media (min-width: 1380px){
+// 	html, body{
+// 		font-size: 20px;
+// 	}
+// }

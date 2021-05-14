@@ -5,7 +5,7 @@ const greeting = {
 	subTitle:
 		"A Passionate Software Developer having an experience of building web applications using various technologies along with good programming and Problem-Solving Skills. Interested to learn new technologies with a receptive mind and diligence.",
 	resumeLink:
-		"https://drive.google.com/uc?id=1Y6wsRVOlDVclGhtwBPAEv1Oxp3z4ICeQ&export=download",
+		"https://drive.google.com/file/d/1ejPgoDuJcKOIyM7F3wVu3zxAobWkB3Ph/view?usp=sharing",
 	portfolio_repository: `https://github.com/ayushazuri/Portfolio-Website`,
 };
 
@@ -15,7 +15,7 @@ const aboutMe = {
 	phone: "+91 9892770647",
 	address: "Maple Leaf, Raheja Vihar, Powai, Mumbai, 400072.",
 	resumeLink:
-		"https://drive.google.com/uc?id=1Y6wsRVOlDVclGhtwBPAEv1Oxp3z4ICeQ&export=download",
+		"https://drive.google.com/file/d/1ejPgoDuJcKOIyM7F3wVu3zxAobWkB3Ph/view?usp=sharing",
 	openForOpportunity: "Yes",
 	message: "My inbox is open for all. Feel free to reach out to me any time. ",
 	portfolio_repository: "https://github.com/ayushazuri/Portfolio-Website",
@@ -301,7 +301,7 @@ const certifications = [
 		name: "Data Structures & Algorithms!",
 		author: "DS Guy",
 		source: "Udemy",
-		link: "https://www.udemy.com/home/my-courses/learning/",
+		link: "http://ude.my/UC-73cfcc6c-47c6-4599-8ddc-35c548c0d31c",
 		image: require("./assets/Images/udemy.png").default,
 	},
 	{
@@ -311,13 +311,6 @@ const certifications = [
 		link: "https://coursera.org/share/b44da8f77e30687fd8a36167c9231f03",
 		image: require("./assets/Images/coursera.png").default,
 	},
-	// {
-	// 	name: "Data Structures & Algorithms!",
-	// 	author: "DS Guy",
-	// 	source: "Udemy",
-	// 	link: "https://www.udemy.com/home/my-courses/learning/",
-	// 	image: require("./assets/Images/udemy.png").default,
-	// },
 	{
 		name: "Java (Basics)",
 		author: "HackerRank",
@@ -344,7 +337,7 @@ const projects = {
 			githubLink: "https://github.com/ayushazuri/Portfolio-Website",
 			image: require("./assets/Images/portfolio.png").default,
 			technologies: ["ReactJS", "Javascript", "SASS"],
-			websiteLink: "www.ayushazuri.com",
+			websiteLink: "https://ayushsingh11.web.app/",
 			description:
 				"A Portfolio Website to showcase my skills and my works as a Software Developer and which can give you a brief description of me. Made from scratch using ReactJs.",
 			timeline: "May 2021",

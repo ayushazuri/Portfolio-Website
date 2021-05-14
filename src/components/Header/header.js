@@ -26,6 +26,7 @@ const Header = ({ isAboutPage }) => {
 
 	const checkSize = () => {
 		setSize(window.innerWidth);
+		setOpen(false);
 	};
 	useEffect(() => {
 		window.addEventListener("resize", checkSize);
