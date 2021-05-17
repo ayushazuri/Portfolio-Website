@@ -1,4 +1,5 @@
 import Achievements from "../container/Achievement";
+import ChangeTheme from "../components/ChangeTheme";
 import Contact from "../container/Contact";
 import Footer from "../container/Footer";
 import Header from "../components/Header/Header";
@@ -37,6 +38,7 @@ const AboutMe = () => {
 			<Header isAboutPage={isAboutPage} />
 			<Contact />
 			<Achievements />
+			<ChangeTheme />
 			<ScrollToTop />
 			<Footer />
 		</div>

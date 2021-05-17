@@ -2,11 +2,12 @@ import "./index.scss";
 
 import Card from "@material-ui/core/Card";
 import React from "react";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
+
 
 const DegreeCard = ({ degree }) => {
 	const { name, timeline, pointer, branch, location, image } = degree;
-	const theme = React.useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 
 	return (
 		<Card

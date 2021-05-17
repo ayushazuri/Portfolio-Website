@@ -2,12 +2,12 @@ import "./index.scss";
 
 import Card from "@material-ui/core/Card";
 import React from "react";
-import ThemeContext from "../../theme";
 import Tooltip from "@material-ui/core/Tooltip";
+import { useSelector } from "react-redux";
 
 const CertificateCard = ({ certificate }) => {
 	const { name, author, link, image } = certificate;
-	const theme = React.useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 	return (
 		<a
 			href={link}

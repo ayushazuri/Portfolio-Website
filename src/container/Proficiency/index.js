@@ -4,11 +4,12 @@ import React, { useContext } from "react";
 
 import { Fade } from "react-reveal";
 import ProgressBar from "../../components/ProgressBar";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
+
 import { skills } from "../../portfolio";
 
 const Proficiency = () => {
-	const theme = useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 	return (
 		<div className="proficiency">
 			<Fade duration={2500} top distance="100px">

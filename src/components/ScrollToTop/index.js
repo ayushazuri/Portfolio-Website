@@ -3,11 +3,11 @@ import "./index.scss";
 import React, { useEffect, useState } from "react";
 
 import { ImArrowUp } from "react-icons/im";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
 
 const ScrollToTop = () => {
 	const [isVisible, setIsVisible] = useState(false);
-	const theme = React.useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 
 	const toggleVisibility = () => {
 		if (window.pageYOffset > 300) {
@@ -39,7 +39,11 @@ const ScrollToTop = () => {
 					onClick={scrollToTop}
 					style={{ backgroundColor: theme.text }}
 				>
-					<ImArrowUp size={20} className="scroll__logo" />
+					<ImArrowUp
+						size={20}
+						className="scroll__logo"
+						style={{ color: theme.body }}
+					/>
 				</div>
 			)}
 		</div>

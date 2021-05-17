@@ -7,12 +7,13 @@ import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
 import { Link } from "react-router-dom";
 import SocialMedia from "../../components/SocialMedia/";
-import ThemeContext from "../../theme.js";
+import { useSelector } from "react-redux";
+
 import { greeting } from "../../portfolio";
 
 const Introduction = () => {
 	const { title, subTitle, resumeLink, profilePhoto } = greeting;
-	const theme = useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 	return (
 		<Fade duration={2000} bottom>
 			<div className="introduction" data-aos="fade-up" data-aos-once>
@@ -38,7 +39,7 @@ const Introduction = () => {
 					</div>
 				</div>
 				<div className="introduction__img">
-					<FeelingProud />
+					<FeelingProud theme={theme}/>
 				</div>
 			</div>
 		</Fade>

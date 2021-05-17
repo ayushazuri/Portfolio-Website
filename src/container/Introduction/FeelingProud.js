@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 
-import { Theme } from "../../theme";
-
 class FeelingProud extends Component {
 	render() {
+		const Theme = this.props.theme;
 		return (
 			<svg
 				id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd"

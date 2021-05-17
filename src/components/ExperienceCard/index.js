@@ -4,7 +4,7 @@ import Badge from "../../StyledComponents/Badge.style.js";
 import Button from "../../StyledComponents/button.style.js";
 import Card from "@material-ui/core/Card";
 import React from "react";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
 
 const ExperienceCard = ({ internship }) => {
 	const {
@@ -18,7 +18,7 @@ const ExperienceCard = ({ internship }) => {
 		technologies,
 	} = internship;
 
-	const theme = React.useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 
 	return (
 		<Card

@@ -5,7 +5,8 @@ import Badge from "../../StyledComponents/Badge.style.js";
 import Button from "../../StyledComponents/button.style.js";
 import Card from "@material-ui/core/Card";
 import React from "react";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
+
 
 const ProjectCards = ({ project }) => {
 	const {
@@ -17,7 +18,7 @@ const ProjectCards = ({ project }) => {
 		image,
 	} = project;
 
-	const theme = React.useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 	return (
 		<Card className="projectcard" style={{ color: theme.text }}>
 			<div className="projectCard">

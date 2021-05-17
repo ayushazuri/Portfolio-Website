@@ -3,11 +3,12 @@ import "./index.scss";
 import { Fade } from "react-reveal";
 import ProjectImg from "./ProjectsImg";
 import React from "react";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
+
 import { projects } from "../../portfolio";
 
 const ProjectIntro = () => {
-	const theme = React.useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 	return (
 		<div className="projectintro">
 			<Fade duration={2500} left distance="200px">

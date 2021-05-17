@@ -40,11 +40,11 @@ const socialMediaLinks = [
 		link: "mailto:ayushazuri@gmail.com",
 		backgroundColor: "#D14836",
 	},
-	{
-		name: "Twitter",
-		link: "https://twitter.com/ayushazuri",
-		backgroundColor: "#1DA1F2",
-	},
+	// {
+	// 	name: "Twitter",
+	// 	link: "https://twitter.com/ayushazuri",
+	// 	backgroundColor: "#1DA1F2",
+	// },
 	{
 		name: "Facebook",
 		link: "https://www.facebook.com/ayushazuri/",
@@ -336,7 +336,7 @@ const projects = {
 			name: "Portfolio Website",
 			githubLink: "https://github.com/ayushazuri/Portfolio-Website",
 			image: require("./assets/Images/portfolio.png").default,
-			technologies: ["ReactJS", "Javascript", "SASS"],
+			technologies: ["ReactJS", "Javascript", "SASS", "Redux"],
 			websiteLink: "https://ayushsingh11.web.app/",
 			description:
 				"A Portfolio Website to showcase my skills and my works as a Software Developer and which can give you a brief description of me. Made from scratch using ReactJs.",

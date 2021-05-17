@@ -4,11 +4,12 @@ import React, { useContext } from "react";
 
 import { Fade } from "react-reveal";
 import FullStackImg from "./FullStackImg";
-import ThemeContext from "../../theme.js";
+import { useSelector } from "react-redux";
+
 import { skills } from "../../portfolio";
 
 const Profession = () => {
-	const theme = useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 	return (
 		<div className="profession">
 			<Fade duration={2500} left distance="200px">

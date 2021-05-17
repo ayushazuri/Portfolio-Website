@@ -24,7 +24,7 @@ export default class FullStackImg extends Component {
 					x="174.96748"
 					width="825.31765"
 					height="26.25696"
-					fill={theme.compImgHighlight}
+					fill={theme.text}
 				/>
 				<circle
 					cx="197.05271"

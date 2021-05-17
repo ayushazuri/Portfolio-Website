@@ -3,11 +3,12 @@ import "./index.scss";
 import AchievementImg from "./AchievementImg";
 import { Fade } from "react-reveal";
 import React from "react";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
+
 import { achievements } from "../../portfolio";
 
 const Achievements = () => {
-	const theme = React.useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 
 	return (
 		<div className="achievement" distance="200px">

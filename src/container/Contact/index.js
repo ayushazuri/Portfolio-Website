@@ -11,7 +11,8 @@ import Button from "../../StyledComponents/button.style.js";
 import { Fade } from "react-reveal";
 import React from "react";
 import SocialMedia from "../../components/SocialMedia";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
+
 import { aboutMe } from "../../portfolio";
 
 const Contact = ({ isFooter }) => {
@@ -26,7 +27,7 @@ const Contact = ({ isFooter }) => {
 		portfolio_repository,
 	} = aboutMe;
 
-	const theme = React.useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 	return (
 		<Fade duration={2000} bottom>
 			<div className="contact">

@@ -3,11 +3,12 @@ import "./index.scss";
 import ExperienceImg from "./ExperienceImg";
 import { Fade } from "react-reveal";
 import React from "react";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
+
 import { experience } from "../../portfolio";
 
 const ExperienceIntro = () => {
-	const theme = React.useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 
 	return (
 		<div className="experience">

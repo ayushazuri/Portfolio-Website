@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 import React from "react";
 import { Slide } from "react-reveal";
 
-// import ThemeContext from "../../theme";
+
 
 const ViewMore = ({ to }) => {
-	// const theme = React.useContext(ThemeContext);
 
 	// const onMouseEnter = (e, color) => {
 	// 	e.target.style.backgroundColor = color;

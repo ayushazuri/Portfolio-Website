@@ -8,10 +8,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import HeaderList from "./HeaderList";
 import { Link } from "react-router-dom";
 import OutsideClickClose from "../OutsideClickClose/OutsideClickClose";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
+
 
 const Header = ({ isAboutPage }) => {
-	const theme = useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 	const [open, setOpen] = useState(false); //For hamburger
 	const [size, setSize] = useState(window.innerWidth); //For responding to the size change (Media Query)
 	const isMobileTablet = 800; //Width for mobiles or tablet

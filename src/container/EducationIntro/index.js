@@ -4,10 +4,11 @@ import CompetitiveLinks from "../../components/CompetitiveLinks";
 import EducationImg from "./EducationImg";
 import { Fade } from "react-reveal";
 import React from "react";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
+
 
 const EducationIntro = () => {
-	const theme = React.useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 
 	return (
 		<div className="education">

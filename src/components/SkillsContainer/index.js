@@ -24,7 +24,8 @@ import { ImHtmlFive2 } from "react-icons/im";
 import React from "react";
 import { RiGatsbyLine } from "react-icons/ri";
 import SkillImg from "./SkillImg";
-import ThemeContext from "../../theme";
+import { useSelector } from "react-redux";
+
 import ViewMore from "../ViewMore";
 import { skills } from "../../portfolio";
 
@@ -76,7 +77,7 @@ const getSkillLogo = (skill) => {
 };
 
 const SkillsContainer = ({ isHome }) => {
-	const theme = React.useContext(ThemeContext);
+	const theme = useSelector((state) => state.theme);
 
 	React.useEffect(() => {
 		!isHome && window.scrollTo(0, 0);

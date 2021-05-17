@@ -186,9 +186,9 @@ const SkillImg = ({ theme }) => {
 				transform="translate(-137.2515 -127.40779)"
 				fill={theme.secondaryText}
 			/>
-			<circle cx="620.997" cy="264.5" r="4" fill="#6c63ff" />
-			<circle cx="620.997" cy="480.5" r="4" fill="#6c63ff" />
-			<circle cx="620.997" cy="552.5" r="4" fill="#6c63ff" />
+			<circle cx="620.997" cy="264.5" r="4" fill={theme.secondaryText} />
+			<circle cx="620.997" cy="480.5" r="4" fill={theme.secondaryText} />
+			<circle cx="620.997" cy="552.5" r="4" fill={theme.secondaryText} />
 			<circle cx="451.497" cy="192" r="7" fill="#3f3d56" />
 			<circle cx="451.497" cy="7" r="7" fill="#3f3d56" />
 			<rect x="450.49703" y="6.99993" width="2" height="185" fill="#3f3d56" />

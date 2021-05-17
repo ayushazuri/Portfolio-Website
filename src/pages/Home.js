@@ -5,7 +5,6 @@ import Layout from "../Layout/Layout";
 import Profession from "../container/Profession";
 import Project from "../container/Project";
 import React from "react";
-import ScrollToTop from "../components/ScrollToTop";
 import SkillsContainer from "../components/SkillsContainer";
 
 const Home = () => {
@@ -19,7 +18,6 @@ const Home = () => {
 				<InternshipExperience isHome={isHome} />
 				<Project isHome={isHome} limit={6} />
 				<Degrees isHome={isHome} />
-				<ScrollToTop />
 			</Layout>
 		</div>
 	);

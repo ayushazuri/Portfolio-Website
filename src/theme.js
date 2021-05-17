@@ -1,6 +1,7 @@
 import React from "react";
 
 export const blueTheme = {
+	name: "Blue",
 	body: "#EDF9FE",
 	text: "#001C55",
 	highlight: "#A6E1FA",
@@ -10,9 +11,11 @@ export const blueTheme = {
 	compImgHighlight: "#E6E6E6",
 	jacketColor: "#0A2472",
 	headerColor: "#0E6BA877",
+	display: "#0E6BA8",
 };
 
-export const brownTheme = {
+export const PlumTheme = {
+	name: "Plum",
 	body: "#FFFEFD",
 	text: "#5D2A42",
 	highlight: "#FFF9EC",
@@ -22,9 +25,11 @@ export const brownTheme = {
 	compImgHighlight: "#E6E6E6",
 	jacketColor: "#FB6376",
 	headerColor: "#E29F9577",
+	display: "#5d2a42",
 };
 
 export const purpleTheme = {
+	name: "Purple",
 	body: "#F8EFF4",
 	text: "#231942",
 	highlight: "#E0B1CB",
@@ -34,9 +39,11 @@ export const purpleTheme = {
 	compImgHighlight: "#E6E6E6",
 	jacketColor: "#5E548E",
 	headerColor: "#BE95C477",
+	display: "#BE95C4",
 };
 
-export const yelGreenTheme = {
+export const greenTheme = {
+	name: "Green",
 	body: "#FFFFEB",
 	text: "#003F2F",
 	highlight: "#dddf00",
@@ -46,9 +53,11 @@ export const yelGreenTheme = {
 	compImgHighlight: "#E6E6E6",
 	jacketColor: "#007f5f",
 	headerColor: "#55a63077",
+	display: "#55a630",
 };
 
 export const redTheme = {
+	name: "Red",
 	body: "#FFF8E6",
 	text: "#6a040f",
 	highlight: "#ffba08",
@@ -58,21 +67,25 @@ export const redTheme = {
 	compImgHighlight: "#E6E6E6",
 	jacketColor: "#9d0208",
 	headerColor: "#dc2f0277",
+	display: "#dc2f02",
 };
 
 export const blackTheme = {
+	name: "Black",
 	body: "#E5E5E5",
 	text: "#14213d",
 	highlight: "#ffffff",
 	dark: "#000000",
 	secondaryText: "#5A6377",
-	imageHighlight: "#fca311",
+	imageHighlight: "white",
 	compImgHighlight: "#E6E6E6",
 	jacketColor: "#8d99ae",
-	headerColor: "#fca31177",
+	headerColor: "#404040",
+	display: "#fca311",
 };
 
 export const pinkTheme = {
+	name: "Pink",
 	body: "#FEE9F2",
 	text: "#620E34",
 	highlight: "#FBA7CD",
@@ -82,9 +95,11 @@ export const pinkTheme = {
 	compImgHighlight: "#E6E6E6",
 	jacketColor: "#8d99ae",
 	headerColor: "#ef476f77",
+	display: "#ef476f",
 };
 
 export const violetTheme = {
+	name: "Violet",
 	body: "#F4EEFC",
 	text: "#430A58",
 	highlight: "#D6BEF4",
@@ -94,9 +109,11 @@ export const violetTheme = {
 	compImgHighlight: "#E6E6E6",
 	jacketColor: "#763D8B",
 	headerColor: "#9b5de577",
+	display: "#9b5de5",
 };
 
-export const greenTheme = {
+export const torquoiseTheme = {
+	name: "Torquoise",
 	body: "#E6FAF5",
 	text: "#084c61",
 	highlight: "#9BEED8",
@@ -106,9 +123,11 @@ export const greenTheme = {
 	compImgHighlight: "#E6E6E6",
 	jacketColor: "#56a3a6",
 	headerColor: "#07beb877",
+	display: "#07beb8",
 };
 
 export const orangeTheme = {
+	name: "Orange",
 	body: "#FFF0EA",
 	text: "#99401F",
 	highlight: "#FFB59A",
@@ -118,11 +137,35 @@ export const orangeTheme = {
 	compImgHighlight: "#E6E6E6",
 	jacketColor: "#d7263d",
 	headerColor: "#FF6B3577",
+	display: "#FF6B35",
 };
 
+export const darkTheme = {
+	name: "Dark",
+	body: "#15202B",
+	text: "#3E50B4",
+	highlight: "#ffffff",
+	dark: "#000000",
+	secondaryText: "#8899A6",
+	imageHighlight: "white",
+	compImgHighlight: "#E6E6E6",
+	jacketColor: "#171F24",
+	headerColor: "#404040",
+	display: "#fca311",
+};
 const Theme = blueTheme;
 
-const ThemeContext = React.createContext();
-
-export default ThemeContext;
-export { Theme };
+const themes = [
+	blueTheme,
+	torquoiseTheme,
+	orangeTheme,
+	violetTheme,
+	pinkTheme,
+	// blackTheme,
+	redTheme,
+	greenTheme,
+	PlumTheme,
+	purpleTheme,
+	// darkTheme,
+];
+export { Theme, themes };

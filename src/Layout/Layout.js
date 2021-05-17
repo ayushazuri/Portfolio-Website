@@ -1,8 +1,10 @@
+import ChangeTheme from "../components/ChangeTheme";
 import Contact from "../container/Contact";
 import Footer from "../container/Footer";
 import Header from "../components/Header/Header";
 import { Helmet } from "react-helmet";
 import React from "react";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Layout = ({ children, page }) => {
 	const isFooter = true;
@@ -24,6 +26,8 @@ const Layout = ({ children, page }) => {
 			</Helmet>
 			<Header />
 			{children}
+			<ChangeTheme />
+			<ScrollToTop />
 			<Contact isFooter={isFooter} />
 			<Footer />
 		</div>
