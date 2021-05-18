@@ -24,10 +24,9 @@ import { ImHtmlFive2 } from "react-icons/im";
 import React from "react";
 import { RiGatsbyLine } from "react-icons/ri";
 import SkillImg from "./SkillImg";
-import { useSelector } from "react-redux";
-
 import ViewMore from "../ViewMore";
 import { skills } from "../../portfolio";
+import { useSelector } from "react-redux";
 
 const getSkillLogo = (skill) => {
 	const size = 50;

@@ -4,24 +4,11 @@ import { Link } from "react-router-dom";
 import React from "react";
 import { Slide } from "react-reveal";
 
-
-
 const ViewMore = ({ to }) => {
-
-	// const onMouseEnter = (e, color) => {
-	// 	e.target.style.backgroundColor = color;
-	// };
-
-	// const onMouseOut = (e) => {
-	// 	e.target.style.backgroundColor = "transparent";
-	// };
-
 	return (
 		<Slide right>
 			<div
 				className="view"
-				// onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-				// onMouseOut={(event) => onMouseOut(event)}
 				data-aos="fade-down"
 				data-aos-once
 				data-aos-offset="100"

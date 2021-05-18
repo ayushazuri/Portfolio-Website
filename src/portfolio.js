@@ -83,7 +83,7 @@ const competitiveLinks = [
 const skills = {
 	descriptions: [
 		"A Web Developer who makes highly interactive and responsive web applications using fascinating technologies.",
-		"Enthusiast programmer who loves to solve different problems with a result-oriented approach.",
+		"Enthusiastic programmer who loves to solve different problems with a result-oriented approach.",
 	],
 	skills: [
 		{
@@ -222,7 +222,7 @@ const skills = {
 
 const experience = {
 	descriptions: [
-		"I have taken up various assignments from different startups as a Web Developer and have used my skills for their growth and development. Those organizations provided me an opportunity to assimilate the technologies in the market and learn new skills.",
+		"I have taken up various assignments from different startups in different settings as a Web Developer and have used my skills for their growth and development along with increasing my knowledge in various technical domains. Those organizations provided me an opportunity to assimilate the technologies which are used in the practical world.",
 	],
 	works: [{}],
 	internships: [
@@ -232,7 +232,7 @@ const experience = {
 			image: require("./assets/Images/rewfa_logo.svg").default,
 			tasks: [
 				"Built a fully responsive website of the E-Commerce Startup catering to various business needs from scratch using ReactJS.",
-				"Designed the UI/UX of the website using Adobe Xd.",
+				"Designed the UI of the website using Adobe Xd.",
 			],
 			link: "https://rewfa.com/",
 			timeline: "12/2020 - Present",
@@ -252,7 +252,7 @@ const experience = {
 			image: require("./assets/Images/orcip_logo.png").default,
 			tasks: [
 				"Worked on company's website.",
-				"Worked on some open source projects like custom-react-select",
+				"Worked on some open source projects like custom-react-select.",
 			],
 			link: "https://orcip.com/",
 			timeline: "03/2020 - 04/2020",

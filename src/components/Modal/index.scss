@@ -52,6 +52,9 @@
 			@media (max-width: 375px) {
 				padding: 15px 0;
 			}
+			@media (max-height: 350px) {
+				padding: 10px 0;
+			}
 			& > * {
 				flex: 1 0 21%;
 				max-width: 130px;
@@ -60,6 +63,10 @@
 				@media (max-width: 375px) {
 					padding: 2px;
 					margin: 5px 0;
+				}
+				@media (max-height: 350px) {
+					padding: 2px 0 0 0;
+					margin: 0;
 				}
 				@include flex;
 				flex-direction: column;

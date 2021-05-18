@@ -51,26 +51,28 @@ const ExperienceCard = ({ internship }) => {
 					<small>{timeline}</small>
 				</div>
 			</div>
-			<div className="card__technologies">
-				<p>Technologies Used :</p>
-				<div className="card__technology">
-					{technologies.map((technology, index) => {
-						return <Badge key={index}>{technology}</Badge>;
-					})}
+			<div className="card__content">
+				<div className="card__technologies">
+					<p>Technologies Used :</p>
+					<div className="card__technology">
+						{technologies.map((technology, index) => {
+							return <Badge key={index}>{technology}</Badge>;
+						})}
+					</div>
 				</div>
-			</div>
-			<div className="card__task">
-				<p>Tasks :</p>
-				<ul>
-					{tasks?.map((task, index) => {
-						return <li key={index}>{task}</li>;
-					})}
-				</ul>
-			</div>
-			<div className="card__button">
-				<a href={link} target="_blank" rel="noopener noreferrer">
-					<Button>Visit Website</Button>
-				</a>
+				<div className="card__task">
+					<p>Tasks :</p>
+					<ul>
+						{tasks?.map((task, index) => {
+							return <li key={index}>{task}</li>;
+						})}
+					</ul>
+				</div>
+				<div className="card__button">
+					<a href={link} target="_blank" rel="noopener noreferrer">
+						<Button>Visit Website</Button>
+					</a>
+				</div>
 			</div>
 		</Card>
 	);

@@ -1,15 +1,13 @@
 import "./Introduction.scss";
 
-import React, { useContext } from "react";
-
 import Button from "../../StyledComponents/button.style.js";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
 import { Link } from "react-router-dom";
+import React from "react";
 import SocialMedia from "../../components/SocialMedia/";
-import { useSelector } from "react-redux";
-
 import { greeting } from "../../portfolio";
+import { useSelector } from "react-redux";
 
 const Introduction = () => {
 	const { title, subTitle, resumeLink, profilePhoto } = greeting;
@@ -39,7 +37,7 @@ const Introduction = () => {
 					</div>
 				</div>
 				<div className="introduction__img">
-					<FeelingProud theme={theme}/>
+					<FeelingProud theme={theme} />
 				</div>
 			</div>
 		</Fade>

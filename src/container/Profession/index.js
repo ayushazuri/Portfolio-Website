@@ -1,12 +1,10 @@
 import "./index.scss";
 
-import React, { useContext } from "react";
-
 import { Fade } from "react-reveal";
 import FullStackImg from "./FullStackImg";
-import { useSelector } from "react-redux";
-
+import React from "react";
 import { skills } from "../../portfolio";
+import { useSelector } from "react-redux";
 
 const Profession = () => {
 	const theme = useSelector((state) => state.theme);

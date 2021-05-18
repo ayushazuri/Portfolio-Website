@@ -1,5 +1,3 @@
-import React from "react";
-
 export const blueTheme = {
 	name: "Blue",
 	body: "#EDF9FE",

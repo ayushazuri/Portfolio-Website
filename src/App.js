@@ -1,6 +1,5 @@
 import { GlobalStyles } from "./globalcss";
 import Main from "./container/Main";
-import { Theme } from "./theme";
 import { ThemeProvider } from "styled-components";
 import { useSelector } from "react-redux";
 function App() {

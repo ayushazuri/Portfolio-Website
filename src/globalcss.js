@@ -21,7 +21,19 @@ export const GlobalStyles = createGlobalStyle`
     align-items: center;
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-     margin: 0;
-     padding: 0;
+    margin: 0;
+    padding: 0;
     transition: all 0.25s linear;
-  }`;
+
+    ::-webkit-scrollbar {
+      width: 16px;
+    }
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 3px grey; 
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background: ${({ theme }) => theme.text};
+    }
+  }
+  `;

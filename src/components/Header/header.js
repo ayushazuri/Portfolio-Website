@@ -1,7 +1,7 @@
 import "./Header.scss";
 
 import { Bounce, Slide } from "react-reveal";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -9,7 +9,6 @@ import HeaderList from "./HeaderList";
 import { Link } from "react-router-dom";
 import OutsideClickClose from "../OutsideClickClose/OutsideClickClose";
 import { useSelector } from "react-redux";
-
 
 const Header = ({ isAboutPage }) => {
 	const theme = useSelector((state) => state.theme);

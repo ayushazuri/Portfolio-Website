@@ -1,16 +1,27 @@
 import "./index.scss";
 
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from "react";
 
-import Button from "../../StyledComponents/button.style.js";
 import { CSSTransition } from "react-transition-group";
 import { FaCircle } from "react-icons/fa";
 import { GrFormClose } from "react-icons/gr";
 import changeTheme from "../../Redux/Action/changeTheme";
+import { makeStyles } from "@material-ui/core/styles";
 import { themes } from "../../theme";
+import { useDispatch } from "react-redux";
 
+const useHoverStyles = makeStyles({
+	themes: {
+		"&:hover, &:focus": {
+			backgroundColor: ({ headerColor }) => headerColor,
+			transition: "0.3s all ease-in-out",
+		},
+	},
+});
 const Modal = ({ theme, show, onClose }) => {
+	const headerColor = theme.headerColor;
+	const classes = useHoverStyles({ headerColor });
+
 	const closeOnEscapeKeyDown = (e) => {
 		if ((e.charCode || e.keyCode) === 27) onClose();
 	};
@@ -21,13 +32,6 @@ const Modal = ({ theme, show, onClose }) => {
 			document.body.removeEventListener("keydown", closeOnEscapeKeyDown);
 		};
 	});
-	const onMouseEnter = (e, color) => {
-		e.target.style.backgroundColor = color;
-	};
-
-	const onMouseLeave = (e) => {
-		e.target.style.backgroundColor = "";
-	};
 
 	const dispatch = useDispatch();
 	const handleChangeTheme = (theme) => {
@@ -36,9 +40,13 @@ const Modal = ({ theme, show, onClose }) => {
 	};
 
 	return (
-		<CSSTransition in={show} unmountOnExit timeout={{ enter: 0, exit: 300 }}>
+		<CSSTransition in={show} unmountOnExit timeout={{ enter: 100, exit: 300 }}>
 			<div className={`modal ${show ? "modal__show" : ""}`} onClick={onClose}>
-				<div className="modal__content" style={{ backgroundColor: theme.body }}>
+				<div
+					className="modal__content"
+					style={{ backgroundColor: theme.body }}
+					onClick={(e) => e.stopPropagation()}
+				>
 					<button className="modal__close">
 						<GrFormClose
 							size={30}
@@ -53,32 +61,20 @@ const Modal = ({ theme, show, onClose }) => {
 						<p>Change Theme</p>
 					</div>
 					<div className="modal__body">
-						{themes.map((theme, index) => {
+						{themes.map((themeOption, index) => {
 							return (
 								<div
-									className="modal__themes"
+									className={classes.themes}
 									key={index}
-									onMouseEnter={(e) => onMouseEnter(e, theme.headerColor)}
-									onFocus={(e) => onMouseEnter(e, theme.headerColor)}
-									onMouseLeave={(e) => onMouseLeave(e)}
-									onClick={() => handleChangeTheme(theme)}
+									onClick={() => handleChangeTheme(themeOption)}
 								>
 									<FaCircle
 										style={{
-											color: theme.display,
+											color: themeOption.display,
 										}}
 										size={40}
-										onMouseLeave={(e) => onMouseLeave(e)}
 									/>
-
-									{/* <div
-										className="modal__color"
-										style={{
-											backgroundColor: theme.body,
-											backgroundImage: `linear-gradient(43deg, ${theme.body} 0%, ${theme.headerColor} 50%, ${theme.text} 100%)`,
-										}}
-									></div> */}
-									<span className="modal__name">{theme.name}</span>
+									<span className="modal__name">{themeOption.name}</span>
 								</div>
 							);
 						})}

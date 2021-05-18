@@ -21,8 +21,8 @@ const Button = styled.button`
 	position: relative;
 	&:hover {
 		border-radius: 17px 0;
-		background-color: ${({ theme }) => theme.jacketColor};
-		border: 1px solid ${({ theme }) => theme.jacketColor};
+		/* background-color: ${({ theme }) => theme.jacketColor};
+		border: 1px solid ${({ theme }) => theme.jacketColor}; */
 		box-shadow: 5px 8px 8px lightgray;
 		transition: all 0.5s ease-in-out;
 	}
@@ -43,5 +43,3 @@ const Button = styled.button`
 `;
 
 export default Button;
-// background-color: #2a2a72;
-// background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
