@@ -25,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     transition: all 0.25s linear;
 
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
       width: 16px;
     }
     ::-webkit-scrollbar-track {
@@ -34,6 +34,7 @@ export const GlobalStyles = createGlobalStyle`
   
     ::-webkit-scrollbar-thumb {
       background: ${({ theme }) => theme.text};
-    }
+    } */
+    
   }
   `;
