@@ -3,8 +3,17 @@
 
 <p  align="center">Link to access the Website <a href="http://ayushsingh11.web.app">http://ayushsingh11.web.app</a></p>
 
+<p align="center">
+    <img alt="repo size" src="https://img.shields.io/badge/Made%20with-ReactJs-blue?&logo=react" />
+    <img alt="Top language" src="https://img.shields.io/github/languages/top/ayushazuri/Portfolio-Website" />
+    <img alt="repo size" src="https://img.shields.io/github/repo-size/ayushazuri/Portfolio-Website" />
+    <img alt="repo size" src="https://img.shields.io/github/license/ayushazuri/Portfolio-Website" />
+    <img alt="repo size" src="https://img.shields.io/website?url=http%3A%2F%2Fayushsingh11.web.app" />
+    <img alt="repo size" src="https://img.shields.io/maintenance/yes/2021" />
+   <img alt="repo size" src="https://img.shields.io/github/languages/count/ayushazuri/Portfolio-Website" />
+</p>
 <p align="center"> 
-    <a href="https://ayushsingh11.web.app" target="_blank">
+   <a href="https://ayushsingh11.web.app" target="_blank">
     <img src="./src/assets/Images/portfolio.png"></img>
   </a>
 </p>
