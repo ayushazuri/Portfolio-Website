@@ -111,7 +111,7 @@ You can add more themes by adding the color palatte in the `theme.js` file. Add 
 
 If you want to contribute to this project and add new different features in it or make the project more clean and better. Please don't hesitate to open an [pull request](https://github.com/ayushazuri/Portfolio-Website/pulls) or [issue](https://github.com/ayushazuri/Portfolio-Website/issues).
 
-# License
+# License 📄
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
