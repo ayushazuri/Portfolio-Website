@@ -54,8 +54,8 @@ export const greenTheme = {
   display: "#55a630",
 };
 
-export const redTheme = {
-  name: "Red",
+export const MaroonTheme = {
+  name: "Maroon",
   body: "#FFF8E6",
   text: "#6a040f",
   highlight: "#ffba08",
@@ -160,7 +160,7 @@ const themes = [
   violetTheme,
   pinkTheme,
   // blackTheme,
-  redTheme,
+  MaroonTheme,
   greenTheme,
   PlumTheme,
   purpleTheme,
