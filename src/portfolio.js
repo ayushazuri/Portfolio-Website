@@ -232,7 +232,7 @@ const experience = {
 			image: require("./assets/Images/rewfa_logo.svg").default,
 			tasks: [
 				"Built a fully responsive website of the E-Commerce Startup catering to various business needs from scratch using ReactJS.",
-				"Designed the UI of the website using Adobe Xd.",
+				"Designed the UI/UX of the website using Adobe Xd.",
 			],
 			link: "https://rewfa.com/",
 			timeline: "12/2020 - 05/2021",
