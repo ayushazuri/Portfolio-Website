@@ -5,7 +5,7 @@ const greeting = {
 	subTitle:
 		"A Passionate Software Developer having an experience of building web applications using various technologies along with good programming and Problem-Solving Skills. Interested to learn new technologies with a receptive mind and diligence.",
 	resumeLink:
-		"https://drive.google.com/file/d/1ejPgoDuJcKOIyM7F3wVu3zxAobWkB3Ph/view?usp=sharing",
+		"https://drive.google.com/file/d/1bYDCMPMB4hCKcbRuVN68vyAwplwqU1n0/view?usp=sharing",
 	portfolio_repository: `https://github.com/ayushazuri/Portfolio-Website`,
 };
 
@@ -15,7 +15,7 @@ const aboutMe = {
 	phone: "+91 9892770647",
 	address: "Maple Leaf, Raheja Vihar, Powai, Mumbai, 400072.",
 	resumeLink:
-		"https://drive.google.com/file/d/1ejPgoDuJcKOIyM7F3wVu3zxAobWkB3Ph/view?usp=sharing",
+		"https://drive.google.com/file/d/1bYDCMPMB4hCKcbRuVN68vyAwplwqU1n0/view?usp=sharing",
 	openForOpportunity: "Yes",
 	message: "My inbox is open for all. Feel free to reach out to me any time. ",
 	portfolio_repository: "https://github.com/ayushazuri/Portfolio-Website",
@@ -235,7 +235,7 @@ const experience = {
 				"Designed the UI of the website using Adobe Xd.",
 			],
 			link: "https://rewfa.com/",
-			timeline: "12/2020 - Present",
+			timeline: "12/2020 - 05/2021",
 			location: "Mumbai",
 			technologies: [
 				"ReactJS",
@@ -402,6 +402,16 @@ const projects = {
 			websiteLink: "https://rewfa.com/",
 			description:
 				"Built this fully responsive website of the E-Commerce Startup catering to various business needs from scratch using ReactJS.",
+			timeline: "Dec 2020 - Feb 2021",
+		},
+		{
+			name: "Todo App Using Firebase",
+			githubLink: "https://github.com/ayushazuri/todo-app-firebase",
+			image: require("./assets/Images/todoApp.png").default,
+			technologies: ["ReactJS", "Javascript", "SASS", "Firebase"],
+			websiteLink: "https://todo-app-firebase11.web.app/",
+			description:
+				"A Todo app built using React and Firebase, which comes with many features that can help you manage your tasks more efficiently.",
 			timeline: "Dec 2020 - Feb 2021",
 		},
 		{
