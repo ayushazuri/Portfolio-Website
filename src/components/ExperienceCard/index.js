@@ -6,17 +6,9 @@ import Card from "@material-ui/core/Card";
 import React from "react";
 import { useSelector } from "react-redux";
 
-const ExperienceCard = ({ internship }) => {
-	const {
-		name,
-		image,
-		role,
-		tasks,
-		link,
-		timeline,
-		location,
-		technologies,
-	} = internship;
+const ExperienceCard = ({ internship, work }) => {
+	const { name, image, role, tasks, link, timeline, location, technologies } =
+		internship ? internship : work;
 
 	const theme = useSelector((state) => state.theme);
 

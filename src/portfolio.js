@@ -13,7 +13,7 @@ const aboutMe = {
 	name: "Ayush Singh",
 	email: "ayushazuri@gmail.com",
 	phone: "+91 9892770647",
-	address: "Maple Leaf, Raheja Vihar, Powai, Mumbai, 400072.",
+	address: "Raheja Vihar, Powai, Mumbai, 400072.",
 	resumeLink:
 		"https://drive.google.com/file/d/1bYDCMPMB4hCKcbRuVN68vyAwplwqU1n0/view?usp=sharing",
 	openForOpportunity: "Yes",
@@ -210,11 +210,11 @@ const skills = {
 			proficiency: "60%",
 		},
 		{
-			skills: "Python | Firebase | Node.js",
+			skills: "Python | Firebase | Node.js | ExpressJS",
 			proficiency: "50%",
 		},
 		{
-			skills: "SQL | MySQL",
+			skills: "SQL | MySQL | MongoDB",
 			proficiency: "60%",
 		},
 	],
@@ -224,7 +224,21 @@ const experience = {
 	descriptions: [
 		"I have taken up various assignments from different startups in different settings as a Web Developer and have used my skills for their growth and development along with increasing my knowledge in various technical domains. Those organizations provided me an opportunity to assimilate the technologies which are used in the practical world.",
 	],
-	works: [{}],
+	works: [
+		{
+			name: "Oracle Financial Services",
+			role: "Associate Consultant",
+			image: require("./assets/Images/oracle.png").default,
+			tasks: [
+				"Work includes consulting with the client and doing any modifications or changes to the Oracle products according to the client's need.",
+				"Working in the HDFC Team to find solution for reducing the size of logs created daily.",
+			],
+			link: "https://www.oracle.com/in/index.html",
+			timeline: "July 2021 - Present",
+			location: "Mumbai",
+			technologies: ["Java", "PL-SQL"],
+		},
+	],
 	internships: [
 		{
 			name: "REWFA Ecommerce Pvt. Ltd.",
@@ -235,7 +249,7 @@ const experience = {
 				"Designed the UI/UX of the website using Adobe Xd.",
 			],
 			link: "https://rewfa.com/",
-			timeline: "12/2020 - 05/2021",
+			timeline: "Dec 2020 - May 2021",
 			location: "Mumbai",
 			technologies: [
 				"ReactJS",
@@ -255,7 +269,7 @@ const experience = {
 				"Worked on some open source projects like custom-react-select.",
 			],
 			link: "https://orcip.com/",
-			timeline: "03/2020 - 04/2020",
+			timeline: "March 2020 - April 2020",
 			location: "Mumbai",
 			technologies: [
 				"ReactJS",
@@ -303,6 +317,20 @@ const certifications = [
 		source: "Udemy",
 		link: "http://ude.my/UC-73cfcc6c-47c6-4599-8ddc-35c548c0d31c",
 		image: require("./assets/Images/udemy.png").default,
+	},
+	{
+		name: "Java SE 8 Fundamentals",
+		author: "Oracle University",
+		source: "Oracle University",
+		link: "https://drive.google.com/file/d/1MKt1tA8th_Fe-T_xDxt4_WpKYauIC4Sp/view?usp=sharing",
+		image: require("./assets/Images/oracle.png").default,
+	},
+	{
+		name: "Oracle Database 19c: PL/SQL",
+		author: "Oracle University",
+		source: "Oracle University",
+		link: "https://drive.google.com/file/d/1zea2EBCbZvDX3ousGIxemn9an7ZbE2uT/view?usp=sharing",
+		image: require("./assets/Images/oracle.png").default,
 	},
 	{
 		name: "SQL for Data Science",
