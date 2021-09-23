@@ -5,7 +5,7 @@ const greeting = {
 	subTitle:
 		"A Passionate Software Developer having an experience of building web applications using various technologies along with good programming and Problem-Solving Skills. Interested to learn new technologies with a receptive mind and diligence.",
 	resumeLink:
-		"https://drive.google.com/file/d/1bYDCMPMB4hCKcbRuVN68vyAwplwqU1n0/view?usp=sharing",
+		"https://drive.google.com/file/d/1q_cWuP38nu1Jb7yZOc4w9zOLzFdrkKXe/view?usp=sharing",
 	portfolio_repository: `https://github.com/ayushazuri/Portfolio-Website`,
 };
 
@@ -15,7 +15,7 @@ const aboutMe = {
 	phone: "+91 9892770647",
 	address: "Raheja Vihar, Powai, Mumbai, 400072.",
 	resumeLink:
-		"https://drive.google.com/file/d/1bYDCMPMB4hCKcbRuVN68vyAwplwqU1n0/view?usp=sharing",
+		"https://drive.google.com/file/d/1q_cWuP38nu1Jb7yZOc4w9zOLzFdrkKXe/view?usp=sharing",
 	openForOpportunity: "Yes",
 	message: "My inbox is open for all. Feel free to reach out to me any time. ",
 	portfolio_repository: "https://github.com/ayushazuri/Portfolio-Website",
@@ -405,21 +405,20 @@ const projects = {
 			timeline: "March 2021",
 		},
 		{
-			name: "Zoom Clone",
-			githubLink: "https://github.com/ayushazuri/Zoom-Clone",
-			image: require("./assets/Images/Amazon.png").default,
+			name: "Whatsapp Clone",
+			githubLink: "https://github.com/ayushazuri/whatsapp-clone",
+			image: require("./assets/Images/whatsapp.png").default,
 			technologies: [
-				"Node.js",
-				"Express.js",
-				"Javascript",
-				"SASS",
-				"Socket.io",
-				"PeerJS",
-				"EJS",
+				"ReactJs",
+				"NodeJs",
+				"ExpressJs",
+				"MongoDB",
+				"SCSS	",
+				"Material UI",
 			],
 			websiteLink: "",
 			description:
-				"A Node.js project, made with the help of various other technologies like express.js, socket.io, ejs, and peerjs.",
+				"A Fullstack project of whatsapp clone built with ReactJs for Frontend and ExpressJs/NodeJs/MongoDB for Backend. When messages are sent, they are stored in the mongoDB database and they are displayed in real-time with the help of Pusher.",
 			timeline: "Arpil 2021",
 		},
 		{
@@ -433,6 +432,16 @@ const projects = {
 			timeline: "Dec 2020 - Feb 2021",
 		},
 		{
+			name: "Task Manager App",
+			githubLink: "https://github.com/ayushazuri/task-manager-express-api",
+			image: require("./assets/Images/Task Manager.png").default,
+			technologies: ["ExpressJs", "NodeJS", "MongoDB", "Javascript", "HTML"],
+			websiteLink: "https://task-manager-express.herokuapp.com/",
+			description:
+				"A Task Manager app built with ExpressJs, NodeJs, and MongoDB to store all the important tasks. Performs All the CRUD Operations.",
+			timeline: "June 2021",
+		},
+		{
 			name: "Todo App Using Firebase",
 			githubLink: "https://github.com/ayushazuri/todo-app-firebase",
 			image: require("./assets/Images/todoApp.png").default,
@@ -440,7 +449,25 @@ const projects = {
 			websiteLink: "https://todo-app-firebase11.web.app/",
 			description:
 				"A Todo app built using React and Firebase, which comes with many features that can help you manage your tasks more efficiently.",
-			timeline: "Dec 2020 - Feb 2021",
+			timeline: "June 2021",
+		},
+		{
+			name: "Zoom Clone",
+			githubLink: "https://github.com/ayushazuri/Zoom-Clone",
+			image: require("./assets/Images/zoom.png").default,
+			technologies: [
+				"Node.js",
+				"Express.js",
+				"Javascript",
+				"SASS",
+				"Socket.io",
+				"PeerJS",
+				"EJS",
+			],
+			websiteLink: "",
+			description:
+				"A Node.js project, made with the help of various other technologies like express.js, socket.io, ejs, and peerjs.",
+			timeline: "Arpil 2021",
 		},
 		{
 			name: "Hotel Management System",
@@ -478,6 +505,7 @@ const projects = {
 const achievements = [
 	"Solved more than 150 questions on Leetcode and GFG.",
 	"Secured 5⭐ in Problem Solving as well as in Java Section and 4⭐ in SQL Section on HackerRank.",
+	"Solved more than 150 questions on Leetcode and GFG.",
 	"Semifinalist in Texas Instruments India Innovation Challenge Design Contest 2019.",
 	"Participated in several Beach-Cleanup Drives.",
 	"Volunteered for teaching underprivileged students at an NGO",
