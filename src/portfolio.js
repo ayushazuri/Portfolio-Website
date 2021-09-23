@@ -273,7 +273,7 @@ const education = [
 	{
 		name: "Sardar Patel Institute of Technology",
 		timeline: "08/2017 - 06/2021",
-		pointer: "8.36",
+		pointer: "8.52",
 		branch: "Electronics and Telecommunication Engineering - B.Tech",
 		location: "Mumbai",
 		image: require("./assets/Images/SPIT_logo.png").default,
@@ -448,6 +448,7 @@ const projects = {
 };
 
 const achievements = [
+	"Solved more than 150 questions on Leetcode and GFG.",
 	"Secured 5⭐ in Problem Solving as well as in Java Section and 4⭐ in SQL Section on HackerRank.",
 	"Semifinalist in Texas Instruments India Innovation Challenge Design Contest 2019.",
 	"Participated in several Beach-Cleanup Drives.",
