@@ -3,7 +3,7 @@ const greeting = {
 	profilePhoto: require("./assets/Images/profile.jpeg").default,
 	logo_name: "AyushSingh",
 	subTitle:
-		"A Passionate Software Developer having an experience of building web applications using various technologies along with good programming and Problem-Solving Skills. Interested to learn new technologies with a receptive mind and diligence.",
+		"A Passionate Software Engineer having an experience of building web applications using various technologies along with good programming and Problem-Solving Skills. Interested to learn new technologies with a receptive mind and diligence.",
 	resumeLink:
 		"https://drive.google.com/file/d/1q_cWuP38nu1Jb7yZOc4w9zOLzFdrkKXe/view?usp=sharing",
 	portfolio_repository: `https://github.com/ayushazuri/Portfolio-Website`,
@@ -231,12 +231,24 @@ const experience = {
 			image: require("./assets/Images/oracle.png").default,
 			tasks: [
 				"Work includes consulting with the client and doing any modifications or changes to the Oracle products according to the client's need.",
-				"Working in the HDFC Team to find solution for reducing the size of logs created daily.",
+				"Integrated some packages for reducing the size of the logs created, daily, at the end of the day.",
 			],
 			link: "https://www.oracle.com/in/index.html",
-			timeline: "July 2021 - Present",
+			timeline: "July 2021 - Jan 2022",
 			location: "Mumbai",
-			technologies: ["Java", "PL-SQL"],
+			technologies: ["Java", "Oracle", "PL-SQL"],
+		},
+		{
+			name: "JP Morgan Chase & Co.",
+			role: "Software Engineer",
+			image: require("./assets/Images/jpmc_logo.png").default,
+			tasks: [
+				"Working in Corporate & Investment Banking Division under the Payments team.",
+			],
+			link: "https://www.jpmorganchase.com/",
+			timeline: "Jan 2022 - Present",
+			location: "Mumbai",
+			technologies: ["Java", "SpringBoot", "Cassandra", "Apache Kafka"],
 		},
 	],
 	internships: [
@@ -245,8 +257,8 @@ const experience = {
 			role: "SDE Intern",
 			image: require("./assets/Images/rewfa_logo.svg").default,
 			tasks: [
-				"Built a fully responsive website of the E-Commerce Startup catering to various business needs from scratch using ReactJS.",
-				"Designed the UI/UX of the website using Adobe Xd.",
+				"Created end to end website of the E-Commerce Startup catering to various business needs from scratch.",
+				"The website would be used by the company for all of it’s future business and interaction with the customers",
 			],
 			link: "https://rewfa.com/",
 			timeline: "Dec 2020 - May 2021",
@@ -265,8 +277,8 @@ const experience = {
 			role: "Web Developer Intern",
 			image: require("./assets/Images/orcip_logo.png").default,
 			tasks: [
-				"Worked on company's website.",
-				"Worked on some open source projects like custom-react-select.",
+				"Worked on company's website to make some changes and fix bugs and worked on various new technologies",
+				"Worked on some portfolio projects for the organization and built react components such as react-select-search, etc.",
 			],
 			link: "https://orcip.com/",
 			timeline: "March 2020 - April 2020",
@@ -505,7 +517,6 @@ const projects = {
 const achievements = [
 	"Solved more than 150 questions on Leetcode and GFG.",
 	"Secured 5⭐ in Problem Solving as well as in Java Section and 4⭐ in SQL Section on HackerRank.",
-	"Solved more than 150 questions on Leetcode and GFG.",
 	"Semifinalist in Texas Instruments India Innovation Challenge Design Contest 2019.",
 	"Participated in several Beach-Cleanup Drives.",
 	"Volunteered for teaching underprivileged students at an NGO",
